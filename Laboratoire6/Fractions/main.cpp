@@ -1,0 +1,21 @@
+/**
+ * \file main.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-17
+ */
+#include "NombreRationnel.h"
+#include <iostream>
+
+using namespace std;
+using namespace labo;
+
+int main() {
+	NombreRationnel fraction1(1, 2);
+	NombreRationnel fraction2(1, 4);
+
+	cout << (fraction1 == fraction2) << endl;
+
+	return 0;
+}
+

@@ -1,0 +1,20 @@
+/**
+ * \file NombreRationnel.h
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-17
+ */
+
+#ifndef NOMBRERATIONNEL_H_
+#define NOMBRERATIONNEL_H_
+
+namespace labo {
+
+class NombreRationnel {
+public:
+	NombreRationnel();
+};
+
+} /* namespace labo */
+
+#endif /* NOMBRERATIONNEL_H_ */

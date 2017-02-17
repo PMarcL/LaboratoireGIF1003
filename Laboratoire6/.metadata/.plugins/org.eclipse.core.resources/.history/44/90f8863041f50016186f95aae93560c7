@@ -1,0 +1,17 @@
+/**
+ * \file NombreRationnel.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-17
+ */
+
+#include "NombreRationnel.h"
+
+namespace labo {
+
+NombreRationnel::NombreRationnel() {
+	// TODO Auto-generated constructor stub
+
+}
+
+} /* namespace labo */

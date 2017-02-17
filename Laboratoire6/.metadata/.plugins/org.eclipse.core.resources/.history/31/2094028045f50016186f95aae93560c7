@@ -1,0 +1,63 @@
+/**
+ * \file NombreRationnel.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-17
+ */
+
+#include "NombreRationnel.h"
+#include <sstream>
+
+using namespace std;
+
+namespace labo {
+
+NombreRationnel::NombreRationnel(int num, int denom) {
+	if (denom == 0) {
+		denom = 1;
+	}
+
+	int pgcd = PGCD(num, denom);
+	m_num = num / pgcd;
+	m_denom = denom / pgcd;
+}
+
+int NombreRationnel::PGCD(int m, int n) {
+	int r = m % n;
+	if (r == 0) {
+		return n;
+	}
+	m = n;
+	n = r;
+	return PGCD(m, n);
+}
+
+string NombreRationnel::reqFormate() const {
+	ostringstream os;
+
+	os << m_num << "/" << m_denom;
+
+	return os.str();
+}
+
+NombreRationnel NombreRationnel::operator *(const NombreRationnel& fractionDroite) const {
+	int num = this->m_num * fractionDroite.m_num;
+	int denom = this->m_denom * fractionDroite.m_denom;
+	NombreRationnel retour(num, denom);
+	return retour;
+}
+
+NombreRationnel NombreRationnel::operator /(const NombreRationnel& fractionDroite) const {
+	int num = this->m_num * fractionDroite.m_denom;
+	int denom;
+
+	if (fractionDroite.m_num == 0) {
+		denom = this->m_denom * 1;
+	} else {
+		denom = this->m_denom * fractionDroite.m_denom;
+	}
+	NombreRationnel retour(num, denom);
+	return retour;
+}
+
+} /* namespace labo */

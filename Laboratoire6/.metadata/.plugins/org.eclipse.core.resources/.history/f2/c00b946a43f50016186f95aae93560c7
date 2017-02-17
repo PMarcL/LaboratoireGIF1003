@@ -1,0 +1,39 @@
+/**
+ * \file NombreRationnel.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-17
+ */
+
+#include "NombreRationnel.h"
+#include <sstream>
+
+using namespace std;
+
+namespace labo {
+
+NombreRationnel::NombreRationnel(int num, int denom) {
+	int pgcd = PGCD(num, denom);
+	m_num = num / pgcd;
+	m_denom = denom / pgcd;
+}
+
+int NombreRationnel::PGCD(int m, int n) {
+	int r = m % n;
+	if (r == 0) {
+		return n;
+	}
+	m = n;
+	n = r;
+	return PGCD(m, n);
+}
+
+string NombreRationnel::reqFormate() const {
+	ostringstream os;
+
+	os << m_num << "/" << m_denom;
+
+	return os.str();
+}
+
+} /* namespace labo */

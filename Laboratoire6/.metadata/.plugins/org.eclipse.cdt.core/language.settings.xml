@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 	<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
-		<provider class="org.eclipse.cdt.managedbuilder.language.settings.providers.GCCBuiltinSpecsDetector" console="false" env-hash="804712727126634833" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetector" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
+		<provider class="org.eclipse.cdt.managedbuilder.language.settings.providers.GCCBuiltinSpecsDetector" console="false" env-hash="811398777636919449" id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetector" keep-relative-paths="false" name="CDT GCC Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;">
 			<language-scope id="org.eclipse.cdt.core.gcc"/>
 			<language-scope id="org.eclipse.cdt.core.g++"/>
 			<language id="org.eclipse.cdt.core.gcc">
@@ -293,10 +293,10 @@
 				<entry kind="macro" name="__GCC_IEC_559_COMPLEX" value="2">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_MINOR__" value="3">
+				<entry kind="macro" name="__GNUC_MINOR__" value="4">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="1">
+				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__GNUC_STDC_INLINE__" value="1">
@@ -695,7 +695,7 @@
 				<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__VERSION__" value="&quot;5.3.1 20160413&quot;">
+				<entry kind="macro" name="__VERSION__" value="&quot;5.4.0 20160609&quot;">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__WCHAR_MAX__" value="0x7fffffff">
@@ -1081,10 +1081,10 @@
 				<entry kind="macro" name="__GNUC_GNU_INLINE__" value="1">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_MINOR__" value="3">
+				<entry kind="macro" name="__GNUC_MINOR__" value="4">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="1">
+				<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__GNUC__" value="5">
@@ -1480,7 +1480,7 @@
 				<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
-				<entry kind="macro" name="__VERSION__" value="&quot;5.3.1 20160413&quot;">
+				<entry kind="macro" name="__VERSION__" value="&quot;5.4.0 20160609&quot;">
 					<flag value="BUILTIN|READONLY"/>
 				</entry>
 				<entry kind="macro" name="__WCHAR_MAX__" value="0x7fffffff">
