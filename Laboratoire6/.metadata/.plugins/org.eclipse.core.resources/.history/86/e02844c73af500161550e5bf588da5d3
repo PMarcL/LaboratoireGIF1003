@@ -1,0 +1,24 @@
+/**
+ * \file main.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-12
+ */
+
+#include <iostream>
+#include "Temps.h"
+#include <unistd.h>
+
+using namespace std;
+using namespace labo;
+
+int main() {
+	cout << "Instances de la classe Temps : " << Temps::reqNombreInstances() << endl;
+
+	Temps tempsLocal;
+	cout << tempsLocal.reqTempsFormate() << endl;
+	cout << "Instances de la classe Temps : " << Temps::reqNombreInstances() << endl;
+
+	return 0;
+}
+

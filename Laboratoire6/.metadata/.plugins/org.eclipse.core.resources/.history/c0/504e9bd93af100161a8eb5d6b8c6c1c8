@@ -1,0 +1,60 @@
+/**
+ * \file Temps.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-12
+ */
+
+#include "Temps.h"
+#include <ctime>
+#include <sstream>
+#include <iostream>
+
+using namespace std;
+
+namespace labo {
+
+int Temps::instances = 0;
+
+Temps::Temps() {
+	Temps::instances++;
+
+}
+
+Temps::~Temps() {
+	Temps::instances--;
+}
+
+void Temps::asgInstances(static int instances) {
+	this->instances = instances;
+}
+
+int Temps::reqHeure() const {
+	return m_heure;
+}
+
+void Temps::asgHeure(int heure) {
+	m_heure = heure;
+}
+
+int Temps::reqMinute() const {
+	return m_minute;
+}
+
+void Temps::asgMinute(int minute) {
+	m_minute = minute;
+}
+
+int Temps::reqSeconde() const {
+	return m_seconde;
+}
+
+void Temps::asgSeconde(int seconde) {
+	m_seconde = seconde;
+}
+
+static int Temps::reqInstances() const {
+	return instances;
+}
+
+} /* namespace labo */

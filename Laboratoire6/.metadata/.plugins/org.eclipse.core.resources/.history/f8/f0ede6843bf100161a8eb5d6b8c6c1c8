@@ -1,0 +1,19 @@
+/**
+ * \file main.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-12
+ */
+
+#include <iostream>
+#include "Temps.h"
+
+using namespace std;
+using namespace labo;
+
+int main() {
+	Temps temps;
+
+	return 0;
+}
+
