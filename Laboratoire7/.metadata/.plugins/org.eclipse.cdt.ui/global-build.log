@@ -937,3 +937,13 @@ Finished building target: TicTacToe
 16:22:21 **** Incremental Build of configuration Debug for project TicTacToe ****
 make all 
 make: rien à faire pour « all ».
+16:24:33 **** Build of configuration Debug for project NombresComplexes ****
+make all 
+Building target: NombresComplexes
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexes"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexes
+ 
+16:24:38 **** Incremental Build of configuration Debug for project NombresComplexes ****
+make all 
+make: rien à faire pour « all ».
