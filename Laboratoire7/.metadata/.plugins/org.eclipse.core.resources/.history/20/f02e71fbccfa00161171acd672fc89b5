@@ -1,0 +1,29 @@
+/**
+ * \file Complexe.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-24
+ */
+
+#include "Complexe.h"
+
+using namespace std;
+
+namespace labo {
+
+Complexe::Complexe(double re, double im) :
+		m_re(re), m_im(im) {
+
+}
+
+ostream& operator<<(ostream& os, const Complexe& z) {
+	os << z.reqComplexeFormate();
+	return os;
+}
+
+std::string Complexe::reqComplexeFormate() const {
+
+}
+
+}
+/* namespace labo */

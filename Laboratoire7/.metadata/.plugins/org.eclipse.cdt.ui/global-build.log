@@ -1,0 +1,709 @@
+14:57:53 **** Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:15:22: error: no matching function for call to ‘labo::Complexe::Complexe(double, int)’
+  Complexe z1(-1.0, -2);
+                      ^
+In file included from ../main.cpp:9:0:
+../Complexe.h:15:2: note: candidate: labo::Complexe::Complexe()
+  Complexe();
+  ^
+../Complexe.h:15:2: note:   candidate expects 0 arguments, 2 provided
+../Complexe.h:13:7: note: candidate: labo::Complexe::Complexe(const labo::Complexe&)
+ class Complexe {
+       ^
+../Complexe.h:13:7: note:   candidate expects 1 argument, 2 provided
+make: *** [main.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+14:58:06 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:15:24: error: no matching function for call to ‘labo::Complexe::Complexe(double, double)’
+  Complexe z1(-1.0, -2.0);
+                        ^
+In file included from ../main.cpp:9:0:
+../Complexe.h:15:2: note: candidate: labo::Complexe::Complexe()
+  Complexe();
+  ^
+../Complexe.h:15:2: note:   candidate expects 0 arguments, 2 provided
+../Complexe.h:13:7: note: candidate: labo::Complexe::Complexe(const labo::Complexe&)
+ class Complexe {
+       ^
+../Complexe.h:13:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+15:00:16 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:01:02 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+../Complexe.cpp: In constructor ‘labo::Complexe::Complexe(double, double)’:
+../Complexe.cpp:13:6: error: expected ‘(’ before ‘=’ token
+ m_re = re, m_im(im) {
+      ^
+subdir.mk:21 : la recette pour la cible « Complexe.o » a échouée
+../Complexe.cpp:13:6: error: expected ‘{’ before ‘=’ token
+../Complexe.cpp: At global scope:
+../Complexe.cpp:13:6: error: expected unqualified-id before ‘=’ token
+make: *** [Complexe.o] Erreur 1
+15:01:39 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:17:18: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘labo::Complexe’)
+  cout << "z1 = " << z1 << endl;
+                  ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/5/ostream:108:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/5/ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/ostream:117:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/5/ostream:127:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/5/ostream:166:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘long int’
+/usr/include/c++/5/ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/5/ostream:170:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘long unsigned int’
+/usr/include/c++/5/ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/5/ostream:174:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘bool’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘short int’
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/5/ostream:181:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘short unsigned int’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘int’
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/5/ostream:192:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘unsigned int’
+/usr/include/c++/5/ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/5/ostream:201:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘long long int’
+/usr/include/c++/5/ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/5/ostream:205:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘long long unsigned int’
+/usr/include/c++/5/ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/5/ostream:220:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘double’
+/usr/include/c++/5/ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/5/ostream:224:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘float’
+/usr/include/c++/5/ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/5/ostream:232:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘long double’
+/usr/include/c++/5/ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/5/ostream:245:7: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘const void*’
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/5/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘labo::Complexe’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:5172:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5172:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/5/ostream:497:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘labo::Complexe’)
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:502:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘char’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/5/ostream:508:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘char’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/5/ostream:514:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘signed char’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/5/ostream:519:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘unsigned char’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/5/ostream:539:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   mismatched types ‘const _CharT*’ and ‘labo::Complexe’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/ostream:638:0,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘const char*’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/5/ostream:556:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘const char*’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/5/ostream:569:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘const signed char*’
+  cout << "z1 = " << z1 << endl;
+                     ^
+In file included from /usr/include/c++/5/iostream:39:0,
+                 from ../main.cpp:8:
+/usr/include/c++/5/ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/5/ostream:574:5: note:   template argument deduction/substitution failed:
+../main.cpp:17:21: note:   cannot convert ‘z1’ (type ‘labo::Complexe’) to type ‘const unsigned char*’
+  cout << "z1 = " << z1 << endl;
+                     ^
+make: *** [main.o] Erreur 1
+15:05:18 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+In file included from ../Complexe.cpp:8:0:
+../Complexe.h:19:66: error: non-member function ‘std::ostream& labo::operator<<(std::ostream&, const labo::Complexe&)’ cannot have cv-qualifier
+  friend std::ostream& operator<<(std::ostream&, const Complexe&) const;
+                                                                  ^
+../Complexe.cpp:19:53: error: non-member function ‘std::ostream& labo::operator<<(std::ostream&, const labo::Complexe&)’ cannot have cv-qualifier
+ ostream& operator<<(ostream& os, const Complexe& z) const {
+                                                     ^
+../Complexe.cpp: In function ‘std::ostream& labo::operator<<(std::ostream&, const labo::Complexe&)’:
+../Complexe.cpp:20:10: error: ‘const class labo::Complexe’ has no member named ‘reqComplexeFormate’
+  os << z.reqComplexeFormate();
+          ^
+subdir.mk:21 : la recette pour la cible « Complexe.o » a échouée
+make: *** [Complexe.o] Erreur 1
+15:11:12 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:11:27 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:12:06 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:12:09 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:12:29 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:20:29: error: no match for ‘operator+’ (operand types are ‘labo::Complexe’ and ‘labo::Complexe’)
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                             ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   ‘labo::Complexe’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+                               ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4783:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4783:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                               ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   mismatched types ‘const _CharT*’ and ‘labo::Complexe’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                               ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                               ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4820:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4820:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                               ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4836:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.h:4836:5: note:   template argument deduction/substitution failed:
+../main.cpp:20:31: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 + z2 = " << z1 + z2 << endl;
+                               ^
+make: *** [main.o] Erreur 1
+15:15:19 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:16:45 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:19:43 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:19:46 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:20:46 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:21:27: error: no match for ‘operator+’ (operand types are ‘int’ and ‘labo::Complexe’)
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                           ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   ‘labo::Complexe’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4783:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4783:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   mismatched types ‘const _CharT*’ and ‘int’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   ‘labo::Complexe’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4820:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4820:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:8:
+/usr/include/c++/5/bits/basic_string.h:4836:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+/usr/include/c++/5/bits/basic_string.h:4836:5: note:   template argument deduction/substitution failed:
+../main.cpp:21:29: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+  cout << "z1 + 4 = " << 4 + z1 << endl;
+                             ^
+make: *** [main.o] Erreur 1
+15:22:17 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:22:25 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:24:17 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:22:29: error: no match for ‘operator*’ (operand types are ‘labo::Complexe’ and ‘labo::Complexe’)
+  cout << "z1 * z2 = " << z1 * z2 << endl;
+                             ^
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+15:27:12 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:27:16 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:28:00 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:23:30: error: ‘class labo::Complexe’ has no member named ‘reqConjugue’
+  cout << "conj(z1) = " << z1.reqConjugue() << endl;
+                              ^
+subdir.mk:21 : la recette pour la cible « main.o » a échouée
+make: *** [main.o] Erreur 1
+15:28:50 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:29:00 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:31:05 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:31:08 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:34:35 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+../Complexe.cpp: In member function ‘labo::Complexe labo::Complexe::operator/(const labo::Complexe&) const’:
+../Complexe.cpp:48:16: error: ‘z1’ was not declared in this scope
+  Complexe z3 = z1 * z2.reqConjugue();
+                ^
+subdir.mk:21 : la recette pour la cible « Complexe.o » a échouée
+make: *** [Complexe.o] Erreur 1
+15:34:58 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:35:02 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
+15:37:44 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+Building file: ../Complexe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Complexe.d" -MT"Complexe.o" -o "Complexe.o" "../Complexe.cpp"
+Finished building: ../Complexe.cpp
+ 
+Building target: NombresComplexe
+Invoking: GCC C++ Linker
+g++  -o "NombresComplexe"  ./Complexe.o ./main.o   
+Finished building target: NombresComplexe
+ 
+15:37:47 **** Incremental Build of configuration Debug for project NombresComplexe ****
+make all 
+make: rien à faire pour « all ».
