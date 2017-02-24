@@ -11,3 +11,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.cdt.ui 4 0 2017-02-24 15:36:02.909
 !MESSAGE Cannot work without declarator
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-02-24 15:40:58.894
+!MESSAGE Indexed 'TicTacToe' (0 sources, 0 headers) in 0,001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

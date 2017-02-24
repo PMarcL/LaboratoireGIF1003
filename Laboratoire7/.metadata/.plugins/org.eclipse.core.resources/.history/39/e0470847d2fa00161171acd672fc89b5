@@ -1,0 +1,20 @@
+/**
+ * \file TicTacToe.h
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-24
+ */
+
+#ifndef TICTACTOE_H_
+#define TICTACTOE_H_
+
+namespace labo {
+
+class TicTacToe {
+public:
+	TicTacToe();
+};
+
+} /* namespace labo */
+
+#endif /* TICTACTOE_H_ */

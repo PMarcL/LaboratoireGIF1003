@@ -1,0 +1,22 @@
+/**
+ * \file TicTacToe.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-02-24
+ */
+
+#include "TicTacToe.h"
+
+using namespace std;
+
+namespace labo {
+
+TicTacToe::TicTacToe() {
+
+}
+
+ostream& operator<<(ostream&, const TicTacToe&) {
+
+}
+
+} /* namespace labo */
