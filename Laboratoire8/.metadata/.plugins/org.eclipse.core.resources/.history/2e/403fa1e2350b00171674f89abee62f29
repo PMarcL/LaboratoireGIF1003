@@ -1,0 +1,38 @@
+/**
+ * \file SphereTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Sphere.h"
+#include <gtest/gtest.h>
+#include "cmath"
+
+using namespace labo8;
+using namespace std;
+
+TEST(Sphere, SphereConstructeurParDefaut) {
+	Sphere test;
+	ASSERT_EQ(0, test.reqRayon());
+}
+
+TEST(Sphere, SphereConstructeurUnParam) {
+	double rayonEnvoye = 5;
+	Sphere test(rayonEnvoye);
+	ASSERT_EQ(rayonEnvoye, test.reqRayon());
+}
+
+class SphereTest: public ::testing::Test {
+protected:
+	Sphere sphere;
+	double rayon = 5;
+
+	virtual void SetUp() {
+		sphere = Sphere(rayon);
+	}
+};
+
+TEST_F(SphereTest, VolumeCoherent) {
+	ASSERT_EQ(4.0 / 3.0 * M_PI * pow(rayon, 3), sphere.reqVolume());
+}

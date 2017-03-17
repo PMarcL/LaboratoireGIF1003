@@ -1,0 +1,10 @@
+13:34:19 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+
+13:34:19 Build Finished (took 184ms)
+

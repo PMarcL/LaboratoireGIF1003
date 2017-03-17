@@ -1,0 +1,21 @@
+/**
+ * \file SphereTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Sphere.h"
+#include <gtest/gtest.h>
+
+using namespace labo8;
+
+TEST(Sphere, SphereConstructeurParDefaut) {
+	Sphere test;
+	ASSERT_EQ(0, test.reqRayon());
+}
+
+TEST(Sphere, SphereConstructeurUnParam) {
+	int rayonEnvoye = 5;
+	Sphere test(rayonEnvoye);
+}

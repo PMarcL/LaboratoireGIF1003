@@ -1,0 +1,13 @@
+/**
+ * \file SphereTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Sphere.h"
+#include <gtest/gtest.h>
+
+TEST(Sphere, SphereConstructeur) {
+
+}

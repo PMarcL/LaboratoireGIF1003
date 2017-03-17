@@ -1,0 +1,773 @@
+12:11:35 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building file: ../test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.o" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: test
+Invoking: GCC C++ Linker
+g++  -o "test"  ./main.o ./test.o   
+makefile:44 : la recette pour la cible « test » a échouée
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o : Dans la fonction « _start » :
+(.text+0x20) : référence indéfinie vers « main »
+collect2: error: ld returned 1 exit status
+make: *** [test] Erreur 1
+12:11:53 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: test
+Invoking: GCC C++ Linker
+g++  -o "test"  ./main.o ./test.o   
+Finished building target: test
+ 
+12:32:03 **** Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+12:33:52 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:33:52 **** Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:8:20: fatal error: Sphere.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+make: *** [main.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « main.o » a échouée
+12:35:42 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:35:42 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++  -o "SpherePrincipal"  ./main.o   
+Finished building target: SpherePrincipal
+ 
+12:36:01 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:36:01 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++  -o "SpherePrincipal"  ./main.o   
+./main.o : Dans la fonction « main » :
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SpherePrincipal/Debug/../main.cpp:11 : référence indéfinie vers « labo8::Sphere::Sphere() »
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SpherePrincipal/Debug/../main.cpp:11 : référence indéfinie vers « labo8::Sphere::~Sphere() »
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « SpherePrincipal » a échouée
+make: *** [SpherePrincipal] Erreur 1
+12:37:02 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:37:02 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+12:42:45 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:42:45 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+12:42:45 **** Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+12:42:52 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+12:48:43 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+12:48:43 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+12:48:43 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../SphereTest.cpp:9:
+../SphereTest.cpp: In member function ‘virtual void Sphere_SphereConstructeur_Test::TestBody()’:
+../SphereTest.cpp:13:20: error: ‘class labo8::Sphere’ has no member named ‘reqRayon’
+  ASSERT_EQ(0, test.reqRayon());
+                    ^
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+12:53:51 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+../Sphere.cpp: In constructor ‘labo8::Sphere::Sphere()’:
+../Sphere.cpp:14:28: error: ‘POSTCONDITION’ was not declared in this scope
+  POSTCONDITION(m_rayon == 0);
+                            ^
+subdir.mk:21 : la recette pour la cible « Sphere.o » a échouée
+make: *** [Sphere.o] Erreur 1
+12:53:51 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+/usr/bin/ld : ne peut trouver -lSphereLib
+collect2: error: ld returned 1 exit status
+make: *** [SpherePrincipal] Erreur 1
+makefile:44 : la recette pour la cible « SpherePrincipal » a échouée
+12:53:52 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+/usr/bin/ld : ne peut trouver -lSphereLib
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « SphereTest » a échouée
+make: *** [SphereTest] Erreur 1
+12:54:05 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+12:54:05 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+12:54:06 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+12:56:41 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+12:56:41 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+12:56:42 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+12:59:54 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+12:59:54 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+12:59:54 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:00:06 **** Clean-only build of configuration Debug for project SphereLib ****
+make clean 
+rm -rf  ./ContratException.o ./Sphere.o  ./ContratException.d ./Sphere.d  libSphereLib.a
+ 
+13:00:06 **** Clean-only build of configuration Debug for project SpherePrincipal ****
+make clean 
+rm -rf  ./main.o  ./main.d  SpherePrincipal
+ 
+13:00:06 **** Clean-only build of configuration Debug for project SphereTest ****
+make clean 
+rm -rf  ./SphereTest.o  ./SphereTest.d  SphereTest
+ 
+13:00:19 **** Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:00:20 **** Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:00:20 **** Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:00:43 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:00:43 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:00:44 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:00:46 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:06:36 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:06:36 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:06:36 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+../SphereTest.cpp: In member function ‘virtual void Sphere_SphereConstructeurUnParam_Test::TestBody()’:
+../SphereTest.cpp:20:25: error: no matching function for call to ‘labo8::Sphere::Sphere(int&)’
+  Sphere test(rayonEnvoye);
+                         ^
+In file included from ../SphereTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Sphere.h:15:2: note: candidate: labo8::Sphere::Sphere()
+  Sphere();
+  ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Sphere.h:15:2: note:   candidate expects 0 arguments, 1 provided
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Sphere.h:13:7: note: candidate: labo8::Sphere::Sphere(const labo8::Sphere&)
+ class Sphere {
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Sphere.h:13:7: note:   no known conversion for argument 1 from ‘int’ to ‘const labo8::Sphere&’
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:09:01 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:09:01 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:09:01 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:09:12 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:16:14 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:16:15 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:16:15 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+../SphereTest.cpp:29:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  double rayon = 5;
+                 ^
+../SphereTest.cpp:35:1: error: expected ‘;’ after class definition
+ }
+ ^
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../SphereTest.cpp:9:
+../SphereTest.cpp: In member function ‘virtual void SphereTest_VolumeCoherent_Test::TestBody()’:
+../SphereTest.cpp:38:53: error: ‘class labo8::Sphere’ has no member named ‘reqVolume’
+  ASSERT_EQ(4.0 / 3.0 * M_PI * pow(rayon, 3), sphere.reqVolume());
+                                                     ^
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:16:23 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:16:23 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:16:24 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+../SphereTest.cpp:29:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  double rayon = 5;
+                 ^
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../SphereTest.cpp:9:
+../SphereTest.cpp: In member function ‘virtual void SphereTest_VolumeCoherent_Test::TestBody()’:
+../SphereTest.cpp:37:53: error: ‘class labo8::Sphere’ has no member named ‘reqVolume’
+  ASSERT_EQ(4.0 / 3.0 * M_PI * pow(rayon, 3), sphere.reqVolume());
+                                                     ^
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:19:02 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:19:02 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:19:03 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+../SphereTest.cpp:29:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  double rayon = 5;
+                 ^
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:19:34 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:19:34 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:19:35 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:19:51 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:20:47 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:20:47 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:20:47 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:20:56 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:23:29 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:23:29 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:23:29 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:23:31 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:27:54 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:27:55 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:27:55 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+../SphereTest.cpp: In member function ‘virtual void SphereTest_SphereFormate_Test::TestBody()’:
+../SphereTest.cpp:42:63: error: invalid operands of types ‘const char [17]’ and ‘double’ to binary ‘operator+’
+  string valeurAttendue = "Sphere de rayon " + sphere.reqRayon();
+                                                               ^
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:29:15 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:29:15 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:29:16 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../SphereTest.cpp:9:
+../SphereTest.cpp: In member function ‘virtual void SphereTest_SphereFormate_Test::TestBody()’:
+../SphereTest.cpp:43:2: error: no matching function for call to ‘CmpHelperSTREQ(const char [15], const char [26], std::__cxx11::string&, std::__cxx11::string)’
+  ASSERT_STREQ(valeurAttendue, sphere.reqSphereFormate());
+  ^
+In file included from ../SphereTest.cpp:9:0:
+/usr/include/gtest/gtest.h:1592:28: note: candidate: testing::AssertionResult testing::internal::CmpHelperSTREQ(const char*, const char*, const char*, const char*)
+ GTEST_API_ AssertionResult CmpHelperSTREQ(const char* expected_expression,
+                            ^
+/usr/include/gtest/gtest.h:1592:28: note:   no known conversion for argument 3 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const char*’
+/usr/include/gtest/gtest.h:1625:28: note: candidate: testing::AssertionResult testing::internal::CmpHelperSTREQ(const char*, const char*, const wchar_t*, const wchar_t*)
+ GTEST_API_ AssertionResult CmpHelperSTREQ(const char* expected_expression,
+                            ^
+/usr/include/gtest/gtest.h:1625:28: note:   no known conversion for argument 3 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const wchar_t*’
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:30:28 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:30:28 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:30:28 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+In file included from /usr/include/gtest/gtest.h:1929:0,
+                 from ../SphereTest.cpp:9:
+../SphereTest.cpp: In member function ‘virtual void SphereTest_SphereFormate_Test::TestBody()’:
+../SphereTest.cpp:43:2: error: no matching function for call to ‘CmpHelperSTREQ(const char [15], const char [26], std::__cxx11::string&, std::__cxx11::string)’
+  ASSERT_STREQ(valeurAttendue, sphere.reqSphereFormate());
+  ^
+In file included from ../SphereTest.cpp:9:0:
+/usr/include/gtest/gtest.h:1592:28: note: candidate: testing::AssertionResult testing::internal::CmpHelperSTREQ(const char*, const char*, const char*, const char*)
+ GTEST_API_ AssertionResult CmpHelperSTREQ(const char* expected_expression,
+                            ^
+/usr/include/gtest/gtest.h:1592:28: note:   no known conversion for argument 3 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const char*’
+/usr/include/gtest/gtest.h:1625:28: note: candidate: testing::AssertionResult testing::internal::CmpHelperSTREQ(const char*, const char*, const wchar_t*, const wchar_t*)
+ GTEST_API_ AssertionResult CmpHelperSTREQ(const char* expected_expression,
+                            ^
+/usr/include/gtest/gtest.h:1625:28: note:   no known conversion for argument 3 from ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ to ‘const wchar_t*’
+subdir.mk:18 : la recette pour la cible « SphereTest.o » a échouée
+make: *** [SphereTest.o] Erreur 1
+13:31:27 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:31:27 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:31:27 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:32:00 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:33:41 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+make: rien à faire pour « all ».
+13:33:41 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+make: rien à faire pour « all ».
+13:33:41 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building file: ../SphereTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SphereTest.d" -MT"SphereTest.o" -o "SphereTest.o" "../SphereTest.cpp"
+Finished building: ../SphereTest.cpp
+ 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:33:43 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».
+13:34:19 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+13:34:19 **** Incremental Build of configuration Debug for project SpherePrincipal ****
+make all 
+Building target: SpherePrincipal
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SpherePrincipal"  ./main.o   -lSphereLib
+Finished building target: SpherePrincipal
+ 
+13:34:19 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+Building target: SphereTest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire8/SphereLib/Debug" -o "SphereTest"  ./SphereTest.o   -lSphereLib -lgtest_main -lgtest -lpthread
+Finished building target: SphereTest
+ 
+13:34:22 **** Incremental Build of configuration Debug for project SphereTest ****
+make all 
+make: rien à faire pour « all ».

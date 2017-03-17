@@ -1,0 +1,20 @@
+/**
+ * \file test.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "test.h"
+
+test::test() {
+	// TODO Auto-generated constructor stub
+
+}
+
+test::~test() {
+	// TODO Auto-generated destructor stub
+}
+
+int test::returnsomething() const {
+}

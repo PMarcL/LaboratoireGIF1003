@@ -1,0 +1,16 @@
+13:34:19 **** Incremental Build of configuration Debug for project SphereLib ****
+make all 
+Building file: ../Sphere.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Sphere.d" -MT"Sphere.o" -o "Sphere.o" "../Sphere.cpp"
+Finished building: ../Sphere.cpp
+ 
+Building target: libSphereLib.a
+Invoking: GCC Archiver
+ar -r  "libSphereLib.a"  ./ContratException.o ./Sphere.o   
+ar: création de libSphereLib.a
+Finished building target: libSphereLib.a
+ 
+
+13:34:19 Build Finished (took 221ms)
+
