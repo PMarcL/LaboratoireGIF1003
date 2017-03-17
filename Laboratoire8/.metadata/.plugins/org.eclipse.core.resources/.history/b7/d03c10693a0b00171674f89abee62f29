@@ -1,0 +1,21 @@
+/**
+ * \file Temps.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Temps.h"
+
+namespace labo8 {
+
+Temps::Temps() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Temps::~Temps() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace labo8 */

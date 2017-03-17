@@ -1,0 +1,23 @@
+/**
+ * \file TempsTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Temps.h"
+#include <gtest/gtest.h>
+
+using namespace labo8;
+
+TEST(Temps, ConstructeurParDefaut) {
+	int heure = 5;
+	int minute = 45;
+	int seconde = 32;
+
+	Temps test(heure, minute, seconde);
+
+	ASSERT_EQ(heure, test.reqHeure());
+	ASSERT_EQ(minute, test.reqMinute());
+	ASSERT_EQ(seconde, test.reqSeconde());
+}

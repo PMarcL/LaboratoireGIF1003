@@ -1,0 +1,45 @@
+/**
+ * \file Temps.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Temps.h"
+
+namespace labo8 {
+
+Temps::Temps() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Temps::~Temps() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace labo8 */
+
+int labo8::Temps::reqHeure() const {
+	return m_heure;
+}
+
+void labo8::Temps::asgHeure(int heure) {
+	m_heure = heure;
+}
+
+int labo8::Temps::reqMinute() const {
+	return m_minute;
+}
+
+void labo8::Temps::asgMinute(int minute) {
+	m_minute = minute;
+}
+
+int labo8::Temps::reqSeconde() const {
+	return m_seconde;
+}
+
+void labo8::Temps::asgSeconde(int seconde) {
+	m_seconde = seconde;
+}

@@ -1,0 +1,13 @@
+/**
+ * \file TempsTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#include "Temps.h"
+#include <gtest/gtest.h>
+
+TEST(Temps, ConstructeurParDefaut) {
+
+}

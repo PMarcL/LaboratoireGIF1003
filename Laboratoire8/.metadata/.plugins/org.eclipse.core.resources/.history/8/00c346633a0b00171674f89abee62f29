@@ -1,0 +1,21 @@
+/**
+ * \file Temps.h
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-17
+ */
+
+#ifndef TEMPS_H_
+#define TEMPS_H_
+
+namespace labo8 {
+
+class Temps {
+public:
+	Temps();
+	virtual ~Temps();
+};
+
+} /* namespace labo8 */
+
+#endif /* TEMPS_H_ */
