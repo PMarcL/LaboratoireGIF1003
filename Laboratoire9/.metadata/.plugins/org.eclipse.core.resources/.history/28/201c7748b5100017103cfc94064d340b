@@ -1,0 +1,15 @@
+/**
+ * \file EmployeTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-24
+ */
+
+#include "Employe.h"
+#include <gtest/gtest.h>
+
+using namespace labo10;
+
+TEST(Employe, ConstructeurParDefaut) {
+	Employe e("Pierre-Marc", "Levasseur");
+}

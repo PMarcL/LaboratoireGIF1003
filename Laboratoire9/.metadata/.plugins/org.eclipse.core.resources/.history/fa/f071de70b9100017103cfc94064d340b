@@ -1,0 +1,43 @@
+/**
+ * \file EmployeTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-24
+ */
+
+#include "Employe.h"
+#include <gtest/gtest.h>
+
+using namespace labo10;
+using namespace util;
+using namespace std;
+
+class EmployeImpl: public Employe {
+public:
+	EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
+			int p_codeDepartement) :
+			Employe(p_nom, p_prenom, p_dateNaissance, p_codeDepartement) {
+	}
+
+	virtual double gains() const {
+		return Employe::gains();
+	}
+
+	virtual string reqEmployeFormate() const {
+		return Employe::reqEmployeFormate();
+	}
+};
+
+TEST(Employe, ConstructeurParDefaut_paramValides) {
+	string nom = "Levasseur";
+	string prenom = "Pierre-Marc";
+	Date dateNaissance = Date(31, 10, 1990);
+	int codeDepartement = 12;
+
+	EmployeImpl e(nom, prenom, dateNaissance, codeDepartement);
+
+	ASSERT_EQ(nom, e.reqNomFamille());
+	ASSERT_EQ(prenom, e.reqPrenom());
+	ASSERT_EQ(dateNaissance, e.reqDateNaissance());
+	ASSERT_EQ(codeDepartement, e.reqCodeDepartement());
+}

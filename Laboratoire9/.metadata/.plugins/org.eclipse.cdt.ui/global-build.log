@@ -1,0 +1,1153 @@
+12:37:38 **** Build of configuration Debug for project ExempleVector ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: ExempleVector
+Invoking: GCC C++ Linker
+g++  -o "ExempleVector"  ./main.o   
+Finished building target: ExempleVector
+ 
+12:37:49 **** Incremental Build of configuration Debug for project ExempleVector ****
+make all 
+make: rien à faire pour « all ».
+12:44:38 **** Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+12:44:40 **** Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:29:10: warning: unused variable ‘mois’ [-Wunused-variable]
+      int mois = determineMois();
+          ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++  -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+/usr/bin/ld : ne peut trouver -lEmployeLib
+collect2: error: ld returned 1 exit status
+make: *** [EmployeMain] Erreur 1
+makefile:44 : la recette pour la cible « EmployeMain » a échouée
+12:45:09 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+12:45:09 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+12:49:50 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+12:49:51 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:28:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+12:49:52 **** Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+12:49:58 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:03:27 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:03:27 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:03:27 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:14:10: error: no matching function for call to ‘labo10::Employe::Employe()’
+  Employe e;
+          ^
+In file included from ../EmployeTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:24:2: note: candidate: labo10::Employe::Employe(const string&, const string&)
+  Employe(const std::string& p_nom, const std::string& p_prenom);
+  ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:24:2: note:   candidate expects 2 arguments, 0 provided
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:20:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:20:7: note:   candidate expects 1 argument, 0 provided
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:03:49 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:03:49 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:03:49 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:13:44 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
+../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
+  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
+                                                                                                  ^
+In file included from ../EmployeCommission.h:12:0,
+                 from ../EmployeCommission.cpp:11:
+../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
+../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
+make: *** [EmployeCommission.o] Erreur 1
+13:13:45 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:28:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+/usr/bin/ld : ne peut trouver -lEmployeLib
+makefile:44 : la recette pour la cible « EmployeMain » a échouée
+collect2: error: ld returned 1 exit status
+make: *** [EmployeMain] Erreur 1
+13:13:45 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:14:38: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10])’
+  Employe e("Pierre-Marc", "Levasseur");
+                                      ^
+In file included from ../EmployeTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:13:50 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
+../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
+  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
+                                                                                                  ^
+In file included from ../EmployeCommission.h:12:0,
+                 from ../EmployeCommission.cpp:11:
+../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
+../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
+make: *** [EmployeCommission.o] Erreur 1
+13:13:50 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+/usr/bin/ld : ne peut trouver -lEmployeLib
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « EmployeMain » a échouée
+make: *** [EmployeMain] Erreur 1
+13:13:50 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:14:38: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10])’
+  Employe e("Pierre-Marc", "Levasseur");
+                                      ^
+In file included from ../EmployeTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:14:05 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
+../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
+  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
+                                                                                                  ^
+In file included from ../EmployeCommission.h:12:0,
+                 from ../EmployeCommission.cpp:11:
+../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
+../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
+subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
+make: *** [EmployeCommission.o] Erreur 1
+13:14:05 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+/usr/bin/ld : ne peut trouver -lEmployeLib
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « EmployeMain » a échouée
+make: *** [EmployeMain] Erreur 1
+13:14:05 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+/usr/bin/ld : ne peut trouver -lEmployeLib
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « EmployeTesteur » a échouée
+make: *** [EmployeTesteur] Erreur 1
+13:19:29 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:19:30 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+13:19:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:20:16 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:20:16 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:20:16 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:15:58: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10], util::Date)’
+  Employe e("Pierre-Marc", "Levasseur", Date(31, 10, 1990));
+                                                          ^
+In file included from ../EmployeTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
+  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
+  ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 3 provided
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
+ class Employe {
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 3 provided
+make: *** [EmployeTest.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+13:20:22 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:20:22 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:20:22 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:23:15 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:26:08 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:26:09 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+13:26:10 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:15:10: error: cannot declare variable ‘e’ to be of abstract type ‘labo10::Employe’
+  Employe e("Pierre-Marc", "Levasseur", Date(31, 10, 1990), 12);
+          ^
+In file included from ../EmployeTest.cpp:8:0:
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   because the following virtual functions are pure within ‘labo10::Employe’:
+ class Employe {
+       ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:33:17: note: 	virtual double labo10::Employe::gains() const
+  virtual double gains() const = 0;
+                 ^
+/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:34:22: note: 	virtual std::__cxx11::string labo10::Employe::reqEmployeFormate() const
+  virtual std::string reqEmployeFormate() const = 0;
+                      ^
+make: *** [EmployeTest.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+13:28:57 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:28:57 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:28:57 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
+../EmployeTest.cpp:16:2: error: ‘EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)’ is private
+  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
+  ^
+../EmployeTest.cpp:31:66: error: within this context
+  EmployeImpl e("Pierre-Marc", "Levasseur", Date(31, 10, 1990), 12);
+                                                                  ^
+make: *** [EmployeTest.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+13:29:10 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:29:10 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:29:10 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:43:51 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:43:51 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+13:43:51 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:43:54 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:46:06 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:46:06 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:46:06 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:46:09 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:46:24 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:46:24 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:46:25 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:46:27 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+13:46:49 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:46:49 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:46:50 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:55:58 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:55:58 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:55:58 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp:71:1: error: expected ‘;’ after class definition
+ }
+ ^
+../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
+../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
+ class EmployeParam: public ::testing::Test {
+       ^
+../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
+  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
+  ^
+../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
+../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
+ class EmployeImpl: public Employe {
+       ^
+../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../EmployeTest.cpp:9:
+../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
+../EmployeTest.cpp:73:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
+ TEST_F(EmployeParam, reqEmployeFormate) {
+ ^
+make: *** [EmployeTest.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+13:56:04 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:56:04 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:56:04 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
+../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
+ class EmployeParam: public ::testing::Test {
+       ^
+../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
+  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
+  ^
+../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
+../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
+ class EmployeImpl: public Employe {
+       ^
+../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../EmployeTest.cpp:9:
+../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
+../EmployeTest.cpp:73:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
+ TEST_F(EmployeParam, reqEmployeFormate) {
+ ^
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:58:12 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:58:12 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:58:12 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
+../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
+ class EmployeParam: public ::testing::Test {
+       ^
+../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
+  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
+  ^
+../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
+../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
+ class EmployeImpl: public Employe {
+       ^
+../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../EmployeTest.cpp:9:
+../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
+../EmployeTest.cpp:75:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
+ TEST_F(EmployeParam, reqEmployeFormate) {
+ ^
+subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
+make: *** [EmployeTest.o] Erreur 1
+13:59:19 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:59:19 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+13:59:19 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+13:59:36 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:04:18 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:04:18 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:04:19 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:05:01 **** Clean-only build of configuration Debug for project EmployeLib ****
+make clean 
+rm -rf  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o  ./ContratException.d ./Date.d ./Employe.d ./EmployeCommission.d ./EmployeHoraire.d ./Patron.d  libEmployeLib.a
+ 
+14:05:01 **** Clean-only build of configuration Debug for project EmployeMain ****
+make clean 
+rm -rf  ./Utilisation.o  ./Utilisation.d  EmployeMain
+ 
+14:05:01 **** Clean-only build of configuration Debug for project EmployeTesteur ****
+make clean 
+rm -rf  ./EmployeTest.o  ./EmployeTest.d  EmployeTesteur
+ 
+14:05:03 **** Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:05:05 **** Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:05:05 **** Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../EmployeTest.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
+Finished building: ../EmployeTest.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+14:05:36 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:05:36 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+14:05:36 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:06:06 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:06:06 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:29:44: error: ‘unEmployeCommisssion’ was not declared in this scope
+  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
+                                            ^
+../Utilisation.cpp:29:67: error: ‘unEmployeHoraire’ was not declared in this scope
+  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
+                                                                   ^
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
+make: *** [Utilisation.o] Erreur 1
+14:06:07 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:07:32 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:07:32 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:29:44: error: ‘unEmployeCommisssion’ was not declared in this scope
+  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
+                                            ^
+../Utilisation.cpp:29:67: error: ‘unEmployeHoraire’ was not declared in this scope
+  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
+                                                                   ^
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
+make: *** [Utilisation.o] Erreur 1
+14:07:32 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+14:08:16 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:08:16 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:08:16 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:09:36 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:09:37 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+14:09:37 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building file: ../PatronTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PatronTesteur.d" -MT"PatronTesteur.o" -o "PatronTesteur.o" "../PatronTesteur.cpp"
+Finished building: ../PatronTesteur.cpp
+ 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+14:09:43 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:10:17 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:10:17 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:33:11: error: ‘v_entreprise’ was not declared in this scope
+   cout << v_entreprise[x]->reqEmployeFormate() << " a gagné " << v_entreprise[x]->gains() << endl;
+           ^
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
+make: *** [Utilisation.o] Erreur 1
+14:10:17 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:10:30 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:10:30 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:10:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:11:26 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:11:26 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:11:26 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:12:29 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:12:30 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:30:86: error: in C++98 ‘entreprise’ must be initialized by constructor, not by ‘{...}’
+  vector<Employe*> entreprise = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
+                                                                                      ^
+../Utilisation.cpp:30:86: error: could not convert ‘{(& unPatron), (& unEmployeCommisssion), (& unEmployeHoraire)}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<labo10::Employe*>’
+../Utilisation.cpp:32:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
+make: *** [Utilisation.o] Erreur 1
+14:12:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:13:48 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:13:48 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:35:6: warning: unused variable ‘mois’ [-Wunused-variable]
+  int mois = determineMois();
+      ^
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:13:48 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:13:52 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+14:16:08 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:16:08 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:16:09 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:16:12 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+make: rien à faire pour « all ».
+14:16:24 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:16:24 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:16:25 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+make: rien à faire pour « all ».
+14:31:17 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:31:17 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+../Utilisation.cpp: In function ‘int main()’:
+../Utilisation.cpp:32:44: error: ‘labo10::Employe’ is an inaccessible base of ‘labo10::EmployeCommission’
+  entreprise.push_back(&unEmployeCommisssion);
+                                            ^
+make: *** [Utilisation.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
+14:31:17 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 
+14:31:30 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:31:31 **** Incremental Build of configuration Debug for project EmployeMain ****
+make all 
+Building file: ../Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
+Finished building: ../Utilisation.cpp
+ 
+Building target: EmployeMain
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
+Finished building target: EmployeMain
+ 
+14:31:31 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make all 
+Building target: EmployeTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
+Finished building target: EmployeTesteur
+ 

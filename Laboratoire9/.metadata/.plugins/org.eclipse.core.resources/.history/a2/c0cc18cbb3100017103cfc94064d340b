@@ -1,0 +1,13 @@
+/**
+ * \file EmployeTest.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-24
+ */
+
+#include "Employe.h"
+#include <gtest/gtest.h>
+
+TEST(Employe, ConstructeurParDefaut) {
+	ASSERT_EQ(1, 1);
+}
