@@ -1,0 +1,21 @@
+/**
+ * \file Entreprise.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-29
+ */
+
+#include "Entreprise.h"
+
+namespace labo10 {
+
+Entreprise::Entreprise() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Entreprise::~Entreprise() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace labo10 */

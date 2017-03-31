@@ -1,0 +1,29 @@
+#include "employecommissiondialog.h"
+
+EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent) :
+		QDialog(parent) {
+	ui.setupUi(this);
+}
+
+EmployeCommissionDialog::~EmployeCommissionDialog() {
+
+}
+
+QString EmployeCommissionDialog::reqNom() const {
+
+}
+QString EmployeCommissionDialog::reqPrenom() const {
+
+}
+util::Date EmployeCommissionDialog::reqDateNaissance() const {
+
+}
+double EmployeCommissionDialog::reqSalaire() const {
+
+}
+double EmployeCommissionDialog::reqCommission() const {
+
+}
+int EmployeCommissionDialog::reqQuantite() const {
+
+}

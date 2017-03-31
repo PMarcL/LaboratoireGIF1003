@@ -1,19 +1,4 @@
-12:37:38 **** Build of configuration Debug for project ExempleVector ****
-make all 
-Building file: ../main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
-Finished building: ../main.cpp
- 
-Building target: ExempleVector
-Invoking: GCC C++ Linker
-g++  -o "ExempleVector"  ./main.o   
-Finished building target: ExempleVector
- 
-12:37:49 **** Incremental Build of configuration Debug for project ExempleVector ****
-make all 
-make: rien à faire pour « all ».
-12:44:38 **** Build of configuration Debug for project EmployeLib ****
+19:11:37 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
 Building file: ../ContratException.cpp
 Invoking: GCC C++ Compiler
@@ -51,725 +36,77 @@ ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCom
 ar: création de libEmployeLib.a
 Finished building target: libEmployeLib.a
  
-12:44:40 **** Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:29:10: warning: unused variable ‘mois’ [-Wunused-variable]
-      int mois = determineMois();
-          ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++  -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-/usr/bin/ld : ne peut trouver -lEmployeLib
-collect2: error: ld returned 1 exit status
-make: *** [EmployeMain] Erreur 1
-makefile:44 : la recette pour la cible « EmployeMain » a échouée
-12:45:09 **** Incremental Build of configuration Debug for project EmployeLib ****
+19:14:01 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
 make: rien à faire pour « all ».
-12:45:09 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-12:49:50 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeHoraire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
-Finished building: ../EmployeHoraire.cpp
- 
-Building file: ../Patron.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
-Finished building: ../Patron.cpp
- 
-Building target: libEmployeLib.a
-Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
-ar: création de libEmployeLib.a
-Finished building target: libEmployeLib.a
- 
-12:49:51 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:28:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-12:49:52 **** Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-12:49:58 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+19:14:01 **** Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+entreprisegui.h:6:21: fatal error: Employe.h: Aucun fichier ou dossier de ce type
+Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+compilation terminated.
+make[1]: *** [debug/main.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+19:14:19 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
 make: rien à faire pour « all ».
-13:03:27 **** Incremental Build of configuration Debug for project EmployeLib ****
+19:14:19 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+entreprisegui.h:6:21: fatal error: Employe.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/main.o] Erreur 1
+make: *** [debug] Erreur 2
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EntrepriseGUI.pro 
+19:14:49 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
 make: rien à faire pour « all ».
-13:03:27 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:03:27 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:14:10: error: no matching function for call to ‘labo10::Employe::Employe()’
-  Employe e;
-          ^
-In file included from ../EmployeTest.cpp:8:0:
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:24:2: note: candidate: labo10::Employe::Employe(const string&, const string&)
-  Employe(const std::string& p_nom, const std::string& p_prenom);
-  ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:24:2: note:   candidate expects 2 arguments, 0 provided
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:20:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe
-       ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:20:7: note:   candidate expects 1 argument, 0 provided
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-make: *** [EmployeTest.o] Erreur 1
-13:03:49 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:03:49 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:03:49 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:13:44 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../Employe.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
-Finished building: ../Employe.cpp
- 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
-../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
-  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
-                                                                                                  ^
-In file included from ../EmployeCommission.h:12:0,
-                 from ../EmployeCommission.cpp:11:
-../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
-../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
-subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
-make: *** [EmployeCommission.o] Erreur 1
-13:13:45 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:28:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-/usr/bin/ld : ne peut trouver -lEmployeLib
-makefile:44 : la recette pour la cible « EmployeMain » a échouée
-collect2: error: ld returned 1 exit status
-make: *** [EmployeMain] Erreur 1
-13:13:45 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:14:38: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10])’
-  Employe e("Pierre-Marc", "Levasseur");
-                                      ^
-In file included from ../EmployeTest.cpp:8:0:
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-make: *** [EmployeTest.o] Erreur 1
-13:13:50 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
-../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
-  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
-                                                                                                  ^
-In file included from ../EmployeCommission.h:12:0,
-                 from ../EmployeCommission.cpp:11:
-../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
-../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
-subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
-make: *** [EmployeCommission.o] Erreur 1
-13:13:50 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-/usr/bin/ld : ne peut trouver -lEmployeLib
-collect2: error: ld returned 1 exit status
-makefile:44 : la recette pour la cible « EmployeMain » a échouée
-make: *** [EmployeMain] Erreur 1
-13:13:50 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:14:38: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10])’
-  Employe e("Pierre-Marc", "Levasseur");
-                                      ^
-In file included from ../EmployeTest.cpp:8:0:
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-make: *** [EmployeTest.o] Erreur 1
-13:14:05 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-../EmployeCommission.cpp: In constructor ‘labo10::EmployeCommission::EmployeCommission(const string&, const string&, double, double, int)’:
-../EmployeCommission.cpp:36:98: error: no matching function for call to ‘labo10::Employe::Employe(const string&, const string&)’
-  Employe(p_nom, p_prenom),m_salaire(p_salaire), m_commission(p_commission), m_quantite(p_quantite)
-                                                                                                  ^
-In file included from ../EmployeCommission.h:12:0,
-                 from ../EmployeCommission.cpp:11:
-../Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-../Employe.h:22:2: note:   candidate expects 4 arguments, 2 provided
-../Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-../Employe.h:19:7: note:   candidate expects 1 argument, 2 provided
-subdir.mk:33 : la recette pour la cible « EmployeCommission.o » a échouée
-make: *** [EmployeCommission.o] Erreur 1
-13:14:05 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-/usr/bin/ld : ne peut trouver -lEmployeLib
-collect2: error: ld returned 1 exit status
-makefile:44 : la recette pour la cible « EmployeMain » a échouée
-make: *** [EmployeMain] Erreur 1
-13:14:05 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-/usr/bin/ld : ne peut trouver -lEmployeLib
-collect2: error: ld returned 1 exit status
-makefile:44 : la recette pour la cible « EmployeTesteur » a échouée
-make: *** [EmployeTesteur] Erreur 1
-13:19:29 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
- 
-Building file: ../EmployeHoraire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
-Finished building: ../EmployeHoraire.cpp
- 
-Building file: ../Patron.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
-Finished building: ../Patron.cpp
- 
-Building target: libEmployeLib.a
-Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
-ar: création de libEmployeLib.a
-Finished building target: libEmployeLib.a
- 
-13:19:30 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-13:19:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:20:16 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:20:16 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:20:16 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:15:58: error: no matching function for call to ‘labo10::Employe::Employe(const char [12], const char [10], util::Date)’
-  Employe e("Pierre-Marc", "Levasseur", Date(31, 10, 1990));
-                                                          ^
-In file included from ../EmployeTest.cpp:8:0:
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note: candidate: labo10::Employe::Employe(const string&, const string&, util::Date, int)
-  Employe(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance, int p_codeDepartement);
-  ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:22:2: note:   candidate expects 4 arguments, 3 provided
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note: candidate: labo10::Employe::Employe(const labo10::Employe&)
- class Employe {
-       ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   candidate expects 1 argument, 3 provided
-make: *** [EmployeTest.o] Erreur 1
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-13:20:22 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:20:22 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:20:22 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:23:15 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-13:26:08 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../Employe.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
-Finished building: ../Employe.cpp
- 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
- 
-Building file: ../EmployeHoraire.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
-Finished building: ../EmployeHoraire.cpp
- 
-Building file: ../Patron.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
-Finished building: ../Patron.cpp
- 
-Building target: libEmployeLib.a
-Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
-ar: création de libEmployeLib.a
-Finished building target: libEmployeLib.a
- 
-13:26:09 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-13:26:10 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:15:10: error: cannot declare variable ‘e’ to be of abstract type ‘labo10::Employe’
-  Employe e("Pierre-Marc", "Levasseur", Date(31, 10, 1990), 12);
-          ^
-In file included from ../EmployeTest.cpp:8:0:
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:19:7: note:   because the following virtual functions are pure within ‘labo10::Employe’:
- class Employe {
-       ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:33:17: note: 	virtual double labo10::Employe::gains() const
-  virtual double gains() const = 0;
-                 ^
-/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Employe.h:34:22: note: 	virtual std::__cxx11::string labo10::Employe::reqEmployeFormate() const
-  virtual std::string reqEmployeFormate() const = 0;
-                      ^
-make: *** [EmployeTest.o] Erreur 1
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-13:28:57 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:28:57 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:28:57 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In member function ‘virtual void Employe_ConstructeurParDefaut_Test::TestBody()’:
-../EmployeTest.cpp:16:2: error: ‘EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)’ is private
-  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
-  ^
-../EmployeTest.cpp:31:66: error: within this context
-  EmployeImpl e("Pierre-Marc", "Levasseur", Date(31, 10, 1990), 12);
-                                                                  ^
-make: *** [EmployeTest.o] Erreur 1
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-13:29:10 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:29:10 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:29:10 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:43:51 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../Employe.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
-Finished building: ../Employe.cpp
- 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
- 
-Building target: libEmployeLib.a
-Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
-ar: création de libEmployeLib.a
-Finished building target: libEmployeLib.a
- 
-13:43:51 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-13:43:51 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:43:54 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-13:46:06 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:46:06 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:46:06 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:46:09 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-13:46:24 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:46:24 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:46:25 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:46:27 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-13:46:49 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:46:49 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:46:50 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:55:58 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:55:58 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:55:58 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp:71:1: error: expected ‘;’ after class definition
- }
- ^
-../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
-../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
- class EmployeParam: public ::testing::Test {
-       ^
-../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
-  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
-  ^
-../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
-../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
- class EmployeImpl: public Employe {
-       ^
-../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
-In file included from /usr/include/gtest/gtest.h:58:0,
-                 from ../EmployeTest.cpp:9:
-../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
-../EmployeTest.cpp:73:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
- TEST_F(EmployeParam, reqEmployeFormate) {
- ^
-make: *** [EmployeTest.o] Erreur 1
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-13:56:04 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:56:04 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:56:04 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
-../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
- class EmployeParam: public ::testing::Test {
-       ^
-../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
-  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
-  ^
-../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
-../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
- class EmployeImpl: public Employe {
-       ^
-../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
-In file included from /usr/include/gtest/gtest.h:58:0,
-                 from ../EmployeTest.cpp:9:
-../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
-../EmployeTest.cpp:73:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
- TEST_F(EmployeParam, reqEmployeFormate) {
- ^
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-make: *** [EmployeTest.o] Erreur 1
-13:58:12 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:58:12 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:58:12 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-../EmployeTest.cpp: In constructor ‘EmployeParam::EmployeParam()’:
-../EmployeTest.cpp:51:7: error: no matching function for call to ‘EmployeImpl::EmployeImpl()’
- class EmployeParam: public ::testing::Test {
-       ^
-../EmployeTest.cpp:17:2: note: candidate: EmployeImpl::EmployeImpl(const string&, const string&, util::Date, int)
-  EmployeImpl(const std::string& p_nom, const std::string& p_prenom, util::Date p_dateNaissance,
-  ^
-../EmployeTest.cpp:17:2: note:   candidate expects 4 arguments, 0 provided
-../EmployeTest.cpp:15:7: note: candidate: EmployeImpl::EmployeImpl(const EmployeImpl&)
- class EmployeImpl: public Employe {
-       ^
-../EmployeTest.cpp:15:7: note:   candidate expects 1 argument, 0 provided
-In file included from /usr/include/gtest/gtest.h:58:0,
-                 from ../EmployeTest.cpp:9:
-../EmployeTest.cpp: In constructor ‘EmployeParam_reqEmployeFormate_Test::EmployeParam_reqEmployeFormate_Test()’:
-../EmployeTest.cpp:75:1: note: synthesized method ‘EmployeParam::EmployeParam()’ first required here 
- TEST_F(EmployeParam, reqEmployeFormate) {
- ^
-subdir.mk:18 : la recette pour la cible « EmployeTest.o » a échouée
-make: *** [EmployeTest.o] Erreur 1
-13:59:19 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-13:59:19 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-13:59:19 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-13:59:36 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:04:18 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:04:18 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:04:19 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:05:01 **** Clean-only build of configuration Debug for project EmployeLib ****
+19:14:49 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+entreprisegui.h:6:21: fatal error: Employe.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/main.o] Erreur 1
+make: *** [debug] Erreur 2
+19:15:01 **** Clean-only build of configuration Debug for project EmployeLib ****
 make clean 
 rm -rf  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o  ./ContratException.d ./Date.d ./Employe.d ./EmployeCommission.d ./EmployeHoraire.d ./Patron.d  libEmployeLib.a
  
-14:05:01 **** Clean-only build of configuration Debug for project EmployeMain ****
+19:15:01 **** Clean-only build of project EntrepriseGUI ****
 make clean 
-rm -rf  ./Utilisation.o  ./Utilisation.d  EmployeMain
- 
-14:05:01 **** Clean-only build of configuration Debug for project EmployeTesteur ****
-make clean 
-rm -rf  ./EmployeTest.o  ./EmployeTest.d  EmployeTesteur
- 
-14:05:03 **** Build of configuration Debug for project EmployeLib ****
+make -f Makefile.Release clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+rm -f release/moc_entreprisegui.cpp
+rm -f ui_entreprisegui.h
+rm -f release/main.o release/entreprisegui.o release/moc_entreprisegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make -f Makefile.Debug clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+rm -f debug/moc_entreprisegui.cpp
+rm -f ui_entreprisegui.h
+rm -f debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EntrepriseGUI.pro 
+19:15:45 **** Build of configuration Debug for project EmployeLib ****
 make all 
 Building file: ../ContratException.cpp
 Invoking: GCC C++ Compiler
@@ -807,68 +144,67 @@ ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCom
 ar: création de libEmployeLib.a
 Finished building target: libEmployeLib.a
  
-14:05:05 **** Build of configuration Debug for project EmployeMain ****
+19:15:47 **** Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+entreprisegui.h:6:21: fatal error: Employe.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: *** [debug/main.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+19:15:53 **** Clean-only build of configuration Debug for project EmployeLib ****
+make clean 
+rm -rf  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o  ./ContratException.d ./Date.d ./Employe.d ./EmployeCommission.d ./EmployeHoraire.d ./Patron.d  libEmployeLib.a
+ 
+19:15:53 **** Clean-only build of project EntrepriseGUI ****
+make clean 
+make -f Makefile.Release clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+rm -f release/moc_entreprisegui.cpp
+rm -f ui_entreprisegui.h
+rm -f release/main.o release/entreprisegui.o release/moc_entreprisegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make -f Makefile.Debug clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+rm -f debug/moc_entreprisegui.cpp
+rm -f ui_entreprisegui.h
+rm -f debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:18:08 **** Build of configuration Debug for project EmployeLib ****
 make all 
-Building file: ../Utilisation.cpp
+Building file: ../ContratException.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
  
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:05:05 **** Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../EmployeTest.cpp
+Building file: ../Date.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeTest.d" -MT"EmployeTest.o" -o "EmployeTest.o" "../EmployeTest.cpp"
-Finished building: ../EmployeTest.cpp
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
  
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-14:05:36 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:05:36 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-14:05:36 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:06:06 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:06:06 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
+Building file: ../Employe.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:29:44: error: ‘unEmployeCommisssion’ was not declared in this scope
-  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
-                                            ^
-../Utilisation.cpp:29:67: error: ‘unEmployeHoraire’ was not declared in this scope
-  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
-                                                                   ^
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
-make: *** [Utilisation.o] Erreur 1
-14:06:07 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:07:32 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
 Building file: ../Patron.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
@@ -880,274 +216,441 @@ ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCom
 ar: création de libEmployeLib.a
 Finished building target: libEmployeLib.a
  
-14:07:32 **** Incremental Build of configuration Debug for project EmployeMain ****
+19:18:09 **** Build of project EntrepriseGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile EntrepriseGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:18:59 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
-Building file: ../Utilisation.cpp
+make: rien à faire pour « all ».
+19:18:59 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:19:05 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:19:05 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EntrepriseGUI.pro 
+19:26:57 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:26:57 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:27:02 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:27:02 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:34:23 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:34:23 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:34:33 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:34:33 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:34:35 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:34:35 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:36:17 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:36:18 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+In file included from main.cpp:1:0:
+entreprisegui.h:20:14: error: ‘Employe’ was not declared in this scope
+  std::vector<Employe*> employes;
+              ^
+entreprisegui.h:20:14: note: suggested alternative:
+In file included from entreprisegui.h:6:0,
+                 from main.cpp:1:
+../EmployeLib/Employe.h:19:7: note:   ‘labo10::Employe’
+ class Employe {
+       ^
+In file included from main.cpp:1:0:
+entreprisegui.h:20:22: error: template argument 1 is invalid
+  std::vector<Employe*> employes;
+                      ^
+entreprisegui.h:20:22: error: template argument 2 is invalid
+make[1]: *** [debug/main.o] Erreur 1
+Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
+make: *** [debug] Erreur 2
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+19:36:38 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:36:38 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:45:06 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:29:44: error: ‘unEmployeCommisssion’ was not declared in this scope
-  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
-                                            ^
-../Utilisation.cpp:29:67: error: ‘unEmployeHoraire’ was not declared in this scope
-  Employe * v_entreprise[3] = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
-                                                                   ^
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
-make: *** [Utilisation.o] Erreur 1
-14:07:32 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-14:08:16 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:08:16 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:08:16 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:09:36 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:09:37 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-14:09:37 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building file: ../PatronTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PatronTesteur.d" -MT"PatronTesteur.o" -o "PatronTesteur.o" "../PatronTesteur.cpp"
-Finished building: ../PatronTesteur.cpp
- 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-14:09:43 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:10:17 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:10:17 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:33:11: error: ‘v_entreprise’ was not declared in this scope
-   cout << v_entreprise[x]->reqEmployeFormate() << " a gagné " << v_entreprise[x]->gains() << endl;
-           ^
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
-make: *** [Utilisation.o] Erreur 1
-14:10:17 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:10:30 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:10:30 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:10:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:11:26 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:11:26 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:31:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:11:26 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:12:29 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:12:30 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:30:86: error: in C++98 ‘entreprise’ must be initialized by constructor, not by ‘{...}’
-  vector<Employe*> entreprise = { &unPatron, &unEmployeCommisssion, &unEmployeHoraire };
-                                                                                      ^
-../Utilisation.cpp:30:86: error: could not convert ‘{(& unPatron), (& unEmployeCommisssion), (& unEmployeHoraire)}’ from ‘<brace-enclosed initializer list>’ to ‘std::vector<labo10::Employe*>’
-../Utilisation.cpp:32:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
-make: *** [Utilisation.o] Erreur 1
-14:12:30 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:13:48 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:13:48 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:35:6: warning: unused variable ‘mois’ [-Wunused-variable]
-  int mois = determineMois();
-      ^
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:13:48 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:13:52 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-14:16:08 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:16:08 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:16:09 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:16:12 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-make: rien à faire pour « all ».
-14:16:24 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-make: rien à faire pour « all ».
-14:16:24 **** Incremental Build of configuration Debug for project EmployeMain ****
-make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:16:25 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-make: rien à faire pour « all ».
-14:31:17 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
  
 Building target: libEmployeLib.a
 Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
 ar: création de libEmployeLib.a
 Finished building target: libEmployeLib.a
  
-14:31:17 **** Incremental Build of configuration Debug for project EmployeMain ****
+19:45:06 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:45:14 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
-Building file: ../Utilisation.cpp
+make: rien à faire pour « all ».
+19:45:14 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:46:51 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:46:51 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:46:57 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:46:57 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:53:49 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:53:49 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:53:57 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:53:58 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:54:23 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:54:23 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic entreprisegui.ui -o ui_entreprisegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/entreprisegui.o entreprisegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. entreprisegui.h -o debug/moc_entreprisegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_entreprisegui.o debug/moc_entreprisegui.cpp
+g++  -o EntrepriseGUI debug/main.o debug/entreprisegui.o debug/moc_entreprisegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EntrepriseGUI' && test -f EntrepriseGUI.gdb-index && objcopy --add-section '.gdb_index=EntrepriseGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EntrepriseGUI' 'EntrepriseGUI' && rm -f EntrepriseGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+19:54:28 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+19:54:28 **** Incremental Build of project EntrepriseGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EntrepriseGUI »
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EmployeGUI.pro 
+12:52:56 **** Clean-only build of project EmployeGUI ****
+make clean 
+make -f Makefile.Release clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+rm -f release/moc_employegui.cpp
+rm -f ui_employegui.h
+rm -f release/main.o release/employegui.o release/moc_employegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+make -f Makefile.Debug clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+rm -f debug/moc_employegui.cpp
+rm -f ui_employegui.h
+rm -f debug/main.o debug/employegui.o debug/moc_employegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:52:56 **** Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/main.o debug/employegui.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:59:14 **** Incremental Build of project EmployeGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile EmployeGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/main.o debug/employegui.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:59:18 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-../Utilisation.cpp: In function ‘int main()’:
-../Utilisation.cpp:32:44: error: ‘labo10::Employe’ is an inaccessible base of ‘labo10::EmployeCommission’
-  entreprise.push_back(&unEmployeCommisssion);
-                                            ^
-make: *** [Utilisation.o] Erreur 1
-subdir.mk:18 : la recette pour la cible « Utilisation.o » a échouée
-14:31:17 **** Incremental Build of configuration Debug for project EmployeTesteur ****
-make all 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
-14:31:30 **** Incremental Build of configuration Debug for project EmployeLib ****
-make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
  
 Building target: libEmployeLib.a
 Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
 ar: création de libEmployeLib.a
 Finished building target: libEmployeLib.a
  
-14:31:31 **** Incremental Build of configuration Debug for project EmployeMain ****
+13:05:07 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/main.o debug/employegui.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:05:10 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
-Building file: ../Utilisation.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -I"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utilisation.d" -MT"Utilisation.o" -o "Utilisation.o" "../Utilisation.cpp"
-Finished building: ../Utilisation.cpp
- 
-Building target: EmployeMain
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeMain"  ./Utilisation.o   -lEmployeLib
-Finished building target: EmployeMain
- 
-14:31:31 **** Incremental Build of configuration Debug for project EmployeTesteur ****
+make: rien à faire pour « all ».
+13:14:09 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/main.o debug/employegui.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:14:13 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
-Building target: EmployeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/Laboratoires/Laboratoire9/EmployeLib/Debug" -o "EmployeTesteur"  ./EmployeTest.o ./PatronTesteur.o   -lEmployeLib -lgtest_main -lgtest -lpthread
-Finished building target: EmployeTesteur
- 
+make: rien à faire pour « all ».
+13:18:44 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+employegui.cpp: In constructor ‘EmployeGUI::EmployeGUI(QWidget*)’:
+employegui.cpp:13:33: error: request for member ‘setText’ in ‘((EmployeGUI*)this)->EmployeGUI::ui.Ui::EmployeGUIClass::<anonymous>.Ui_EmployeGUIClass::affichageEntrepriseTextEdit’, which is of pointer type ‘QTextEdit*’ (maybe you meant to use ‘->’ ?)
+  ui.affichageEntrepriseTextEdit.setText(m_entreprise.reqEntrepriseFormate().c_str());
+                                 ^
+Makefile.Debug:172 : la recette pour la cible « debug/employegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/employegui.o] Erreur 1
+make: *** [debug] Erreur 2
+13:18:45 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:19:27 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/main.o debug/employegui.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:19:28 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:28:32 **** Incremental Build of project EmployeGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile EmployeGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employecommissiondialog.ui -o ui_employecommissiondialog.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:28:37 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EmployeGUI.pro 
+13:31:55 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:31:56 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:32:15 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:32:16 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:45:52 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employecommissiondialog.ui -o ui_employecommissiondialog.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:45:54 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:06:29 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+14:06:32 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:10:22 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+14:10:23 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:29:28 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »

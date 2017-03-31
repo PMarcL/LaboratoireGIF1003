@@ -1,0 +1,44 @@
+#include "employecommissiondialog.h"
+
+using namespace util;
+
+EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent) :
+		QDialog(parent) {
+	ui.setupUi(this);
+	QObject::connect(ui.okBouton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+EmployeCommissionDialog::~EmployeCommissionDialog() {
+
+}
+
+void EmployeCommissionDialog::validerFormulaire() {
+	accept();
+}
+
+QString EmployeCommissionDialog::reqNom() const {
+	return ui.nomLineEdit->text();
+}
+
+QString EmployeCommissionDialog::reqPrenom() const {
+	return ui.prenomLineEdit->text();
+}
+
+util::Date EmployeCommissionDialog::reqDateNaissance() const {
+	int jour = ui.jourSpinBox->value();
+	int mois = ui.moisSpinBox->value();
+	int annee = ui.anneeSpinBox->value();
+	return Date(jour, mois, annee);
+}
+
+double EmployeCommissionDialog::reqSalaire() const {
+	return ui.salaireDoubleSpinBox->value();
+}
+
+double EmployeCommissionDialog::reqCommission() const {
+	return ui.commissionDoubleSpinBox->value();
+}
+
+int EmployeCommissionDialog::reqQuantite() const {
+	return ui.quantiteSpinBox->value();
+}

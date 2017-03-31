@@ -1,0 +1,18 @@
+#include "employegui.h"
+#include "EmployeCommission.h"
+#include "Date.h"
+
+using namespace labo10;
+using namespace util;
+
+EmployeGUI::EmployeGUI(QWidget *parent) :
+		QMainWindow(parent) {
+	ui.setupUi(this);
+	Employe* temp = new EmployeCommission("Levasseur", "Pierre-Marc", Date(31, 10, 1990), 12, 100, 100, 5);
+	m_entreprise.ajouterEmploye(temp);
+	ui.affichageEntrepriseTextEdit.setText(m_entreprise.reqEntrepriseFormate().c_str());
+}
+
+EmployeGUI::~EmployeGUI() {
+
+}

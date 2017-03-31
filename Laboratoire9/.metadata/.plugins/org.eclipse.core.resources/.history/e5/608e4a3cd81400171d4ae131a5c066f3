@@ -1,0 +1,15 @@
+#include "entreprisegui.h"
+
+EntrepriseGUI::EntrepriseGUI(QWidget *parent) :
+		QMainWindow(parent) {
+	ui.setupUi(this);
+	QObject::connect(ui.afficherEntrepriseBouton, SIGNAL(clicked()), this, SLOT(afficherEntreprise()));
+}
+
+EntrepriseGUI::~EntrepriseGUI() {
+
+}
+
+void EntrepriseGUI::afficherEntreprise() {
+
+}

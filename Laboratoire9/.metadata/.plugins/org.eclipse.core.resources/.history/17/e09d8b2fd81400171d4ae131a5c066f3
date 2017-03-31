@@ -1,0 +1,12 @@
+#include "entreprisegui.h"
+
+EntrepriseGUI::EntrepriseGUI(QWidget *parent)
+    : QMainWindow(parent)
+{
+	ui.setupUi(this);
+}
+
+EntrepriseGUI::~EntrepriseGUI()
+{
+
+}

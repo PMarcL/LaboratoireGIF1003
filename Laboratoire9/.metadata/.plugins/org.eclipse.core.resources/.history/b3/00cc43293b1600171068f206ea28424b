@@ -1,0 +1,12 @@
+#include "employecommissiondialog.h"
+
+EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent)
+    : QDialog(parent)
+{
+	ui.setupUi(this);
+}
+
+EmployeCommissionDialog::~EmployeCommissionDialog()
+{
+
+}

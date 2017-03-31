@@ -1,0 +1,20 @@
+#include "employegui.h"
+#include "EmployeCommission.h"
+#include "Date.h"
+
+using namespace labo10;
+using namespace util;
+
+EmployeGUI::EmployeGUI(QWidget *parent) :
+		QMainWindow(parent) {
+	ui.setupUi(this);
+	QObject::connect(ui.ajouterCommisBouton, SIGNAL(triggered()), this, SLOT(dialogCommis()));
+}
+
+EmployeGUI::~EmployeGUI() {
+
+}
+
+void EmployeGUI::dialogCommis() {
+
+}

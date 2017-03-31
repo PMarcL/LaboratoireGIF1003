@@ -1,16 +1,6 @@
-14:31:30 **** Incremental Build of configuration Debug for project EmployeLib ****
+14:10:23 **** Incremental Build of configuration Debug for project EmployeLib ****
 make all 
-Building file: ../EmployeCommission.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
-Finished building: ../EmployeCommission.cpp
- 
-Building target: libEmployeLib.a
-Invoking: GCC Archiver
-ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Patron.o   
-ar: création de libEmployeLib.a
-Finished building target: libEmployeLib.a
- 
+make: rien à faire pour « all ».
 
-14:31:31 Build Finished (took 220ms)
+14:10:23 Build Finished (took 80ms)
 

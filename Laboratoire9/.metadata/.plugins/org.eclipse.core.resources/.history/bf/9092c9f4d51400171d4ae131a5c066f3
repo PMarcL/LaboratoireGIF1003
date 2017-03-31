@@ -1,0 +1,10 @@
+TEMPLATE = app
+TARGET = EntrepriseGUI 
+
+QT        += core gui 
+
+HEADERS   += entreprisegui.h
+SOURCES   += main.cpp \
+    entreprisegui.cpp
+FORMS     += entreprisegui.ui    
+RESOURCES +=

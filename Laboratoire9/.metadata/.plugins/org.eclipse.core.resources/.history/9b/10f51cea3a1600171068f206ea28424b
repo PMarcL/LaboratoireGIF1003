@@ -1,0 +1,25 @@
+#include "employegui.h"
+#include "EmployeCommission.h"
+#include "Date.h"
+#include "employecommissiondialog.h"
+
+using namespace labo10;
+using namespace util;
+
+EmployeGUI::EmployeGUI(QWidget *parent) :
+		QMainWindow(parent) {
+	ui.setupUi(this);
+	QObject::connect(ui.ajouterCommisBouton, SIGNAL(clicked()), this, SLOT(dialogCommis()));
+}
+
+EmployeGUI::~EmployeGUI() {
+
+}
+
+void EmployeGUI::dialogCommis() {
+	EmployeCommissionDialog saisieCommis(this);
+	if (saisieCommis.exec()) {
+
+	}
+	ui.affichageEntrepriseTextEdit->setText(m_entreprise.reqEntrepriseFormate().c_str());
+}

@@ -1,0 +1,19 @@
+#ifndef ENTREPRISEGUI_H
+#define ENTREPRISEGUI_H
+
+#include <QtGui/QMainWindow>
+#include "ui_entreprisegui.h"
+#include "Employe.h"
+
+class EntrepriseGUI: public QMainWindow {
+	Q_OBJECT
+
+public:
+	EntrepriseGUI(QWidget *parent = 0);
+	~EntrepriseGUI();private slots:
+
+private:
+	Ui::EntrepriseGUIClass ui;
+};
+
+#endif // ENTREPRISEGUI_H
