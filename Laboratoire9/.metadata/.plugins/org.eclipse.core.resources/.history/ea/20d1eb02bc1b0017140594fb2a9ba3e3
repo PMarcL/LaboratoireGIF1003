@@ -1,0 +1,60 @@
+#include "employecommissiondialog.h"
+#include <QMessageBox>
+
+using namespace util;
+
+EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent, TypeDialog t) :
+		QDialog(parent) {
+	ui.setupUi(this);
+
+	if (t == COMMISSION) {
+
+	} else if (t == PATRON) {
+
+	}
+
+	QObject::connect(ui.okBouton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+EmployeCommissionDialog::~EmployeCommissionDialog() {
+
+}
+
+void EmployeCommissionDialog::validerFormulaire() {
+	if (ui.nomLineEdit->text().isEmpty()) {
+		QString message("Le nom ne doit pas être vide!!!");
+		QMessageBox::information(this, "Erreur!", message);
+	} else if (ui.prenomLineEdit->text().isEmpty()) {
+		QString message("Le prenom ne doit pas être vide!!!");
+		QMessageBox::information(this, "Erreur!", message);
+	} else {
+		accept();
+	}
+}
+
+QString EmployeCommissionDialog::reqNom() const {
+	return ui.nomLineEdit->text();
+}
+
+QString EmployeCommissionDialog::reqPrenom() const {
+	return ui.prenomLineEdit->text();
+}
+
+util::Date EmployeCommissionDialog::reqDateNaissance() const {
+	int jour = ui.jourSpinBox->value();
+	int mois = ui.moisSpinBox->value();
+	int annee = ui.anneeSpinBox->value();
+	return Date(jour, mois, annee);
+}
+
+double EmployeCommissionDialog::reqSalaire() const {
+	return ui.salaireDoubleSpinBox->value();
+}
+
+double EmployeCommissionDialog::reqCommission() const {
+	return ui.commissionDoubleSpinBox->value();
+}
+
+int EmployeCommissionDialog::reqQuantite() const {
+	return ui.quantiteSpinBox->value();
+}

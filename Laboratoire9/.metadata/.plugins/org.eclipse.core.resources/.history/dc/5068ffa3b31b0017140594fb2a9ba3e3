@@ -1,0 +1,22 @@
+#include "dialogsupprimeremploye.h"
+
+DialogSupprimerEmploye::DialogSupprimerEmploye(QWidget *parent) :
+		QDialog(parent) {
+	ui.setupUi(this);
+	QObject::connect(ui.okBouton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+}
+
+DialogSupprimerEmploye::~DialogSupprimerEmploye() {
+
+}
+
+QString reqNom() const {
+
+}
+QString reqPrenom() const {
+
+}
+
+void DialogSupprimerEmploye::validerFormulaire() {
+	accept();
+}

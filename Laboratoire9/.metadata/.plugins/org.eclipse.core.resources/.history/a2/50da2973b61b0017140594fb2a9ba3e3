@@ -1,0 +1,21 @@
+/**
+ * \file EmployeException.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-04-07
+ */
+
+#include "EmployeException.h"
+
+namespace labo10 {
+
+EmployeException::EmployeException() {
+	// TODO Auto-generated constructor stub
+
+}
+
+EmployeException::~EmployeException() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace labo10 */

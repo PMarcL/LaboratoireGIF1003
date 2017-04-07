@@ -1,11 +1,10 @@
-14:29:28 **** Incremental Build of project EmployeGUI ****
+14:37:23 **** Incremental Build of project EmployeGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
-g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
 { test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
 
-14:29:29 Build Finished (took 1s.42ms)
+14:37:24 Build Finished (took 335ms)
 

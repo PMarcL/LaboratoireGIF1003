@@ -42,18 +42,20 @@ public:
     QLabel *label_4;
     QLabel *label_5;
     QLabel *label_6;
+    QDoubleSpinBox *salaireHebdoPatron;
+    QLabel *label_7;
 
     void setupUi(QDialog *EmployeCommissionDialogClass)
     {
         if (EmployeCommissionDialogClass->objectName().isEmpty())
             EmployeCommissionDialogClass->setObjectName(QString::fromUtf8("EmployeCommissionDialogClass"));
-        EmployeCommissionDialogClass->resize(400, 300);
+        EmployeCommissionDialogClass->resize(400, 358);
         boutonQuitter = new QPushButton(EmployeCommissionDialogClass);
         boutonQuitter->setObjectName(QString::fromUtf8("boutonQuitter"));
-        boutonQuitter->setGeometry(QRect(210, 260, 171, 27));
+        boutonQuitter->setGeometry(QRect(210, 300, 171, 27));
         okBouton = new QPushButton(EmployeCommissionDialogClass);
         okBouton->setObjectName(QString::fromUtf8("okBouton"));
-        okBouton->setGeometry(QRect(20, 260, 171, 27));
+        okBouton->setGeometry(QRect(20, 300, 171, 27));
         prenomLineEdit = new QLineEdit(EmployeCommissionDialogClass);
         prenomLineEdit->setObjectName(QString::fromUtf8("prenomLineEdit"));
         prenomLineEdit->setGeometry(QRect(200, 20, 181, 27));
@@ -103,6 +105,12 @@ public:
         label_6 = new QLabel(EmployeCommissionDialogClass);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(110, 230, 55, 17));
+        salaireHebdoPatron = new QDoubleSpinBox(EmployeCommissionDialogClass);
+        salaireHebdoPatron->setObjectName(QString::fromUtf8("salaireHebdoPatron"));
+        salaireHebdoPatron->setGeometry(QRect(200, 260, 62, 27));
+        label_7 = new QLabel(EmployeCommissionDialogClass);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(84, 270, 91, 20));
 
         retranslateUi(EmployeCommissionDialogClass);
         QObject::connect(boutonQuitter, SIGNAL(clicked()), EmployeCommissionDialogClass, SLOT(close()));
@@ -121,6 +129,7 @@ public:
         label_4->setText(QApplication::translate("EmployeCommissionDialogClass", "Salaire :", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("EmployeCommissionDialogClass", "Commission :", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("EmployeCommissionDialogClass", "Quantit\303\251:", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("EmployeCommissionDialogClass", "Salaire hebdo:", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

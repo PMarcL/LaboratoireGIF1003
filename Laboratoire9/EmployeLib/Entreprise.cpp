@@ -6,6 +6,7 @@
  */
 
 #include "Entreprise.h"
+#include "EmployeException.h"
 #include <sstream>
 
 using namespace std;
@@ -27,6 +28,14 @@ void Entreprise::ajouterEmploye(Employe* employe) {
 	m_employes.push_back(employe);
 }
 
+bool Entreprise::employeEstDejaPresent(const Employe& employe) const {
+	for (vector<Employe*>::const_iterator it = m_employes.begin(); it != m_employes.end(); ++it) {
+		if (*(*it) == employe) {
+			return true;
+		}
+	}
+}
+
 string Entreprise::reqEntrepriseFormate() const {
 	ostringstream os;
 
@@ -38,4 +47,16 @@ string Entreprise::reqEntrepriseFormate() const {
 	return os.str();
 }
 
+void Entreprise::supprimerEmploye(const std::string& nom, const std::string& prenom) {
+	for (vector<Employe*>::iterator it = m_employes.begin(); it != m_employes.end(); ++it) {
+		if ((*it)->reqNomFamille() == nom && (*it)->reqPrenom() == prenom) {
+			delete *it;
+			m_employes.erase(it);
+			return;
+		}
+	}
+	throw EmployeAbsentException("employe pas present dans l'entreprise");
+}
+
 } /* namespace labo10 */
+

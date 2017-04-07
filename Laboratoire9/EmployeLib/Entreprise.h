@@ -18,8 +18,12 @@ public:
 	Entreprise();
 	virtual ~Entreprise();
 
+	bool employeEstDejaPresent(const Employe& employe) const;
+
 	void ajouterEmploye(Employe* employe);
 	std::string reqEntrepriseFormate() const;
+
+	void supprimerEmploye(const std::string& nom, const std::string& prenom);
 
 private:
 	Entreprise(const Entreprise&);

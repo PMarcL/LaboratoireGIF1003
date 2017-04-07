@@ -31,8 +31,9 @@ public:
 	util::Date reqDateNaissance() const;
 
 	virtual double gains() const = 0;
-	virtual std::string reqEmployeFormate() const = 0;
+	virtual std::string reqEmployeFormate() const;
 
+	bool operator==(const Employe&) const;
 private:
 	void verifieInvariant() const;
 

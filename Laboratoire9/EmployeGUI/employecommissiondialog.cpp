@@ -3,9 +3,16 @@
 
 using namespace util;
 
-EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent) :
+EmployeCommissionDialog::EmployeCommissionDialog(QWidget *parent, TypeDialog t) :
 		QDialog(parent) {
 	ui.setupUi(this);
+
+	if (t == COMMISSION) {
+		ui.salaireHebdoPatron->setEnabled(false);
+	} else if (t == PATRON) {
+
+	}
+
 	QObject::connect(ui.okBouton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
 }
 

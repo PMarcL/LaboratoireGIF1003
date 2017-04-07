@@ -1,0 +1,12 @@
+#include "dialogsupprimeremploye.h"
+
+DialogSupprimerEmploye::DialogSupprimerEmploye(QWidget *parent)
+    : QDialog(parent)
+{
+	ui.setupUi(this);
+}
+
+DialogSupprimerEmploye::~DialogSupprimerEmploye()
+{
+
+}

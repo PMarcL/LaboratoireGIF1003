@@ -94,5 +94,9 @@ void Employe::verifieInvariant() const {
 	INVARIANT(m_codeDepartement > 0);
 }
 
+bool Employe::operator ==(const Employe& e) const {
+	return m_nomFamille == e.m_nomFamille && m_prenom == e.m_prenom && m_codeDepartement == e.m_codeDepartement
+			&& m_dateNaissance == e.m_dateNaissance;
 }
 
+}

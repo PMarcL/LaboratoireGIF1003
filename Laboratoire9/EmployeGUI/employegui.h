@@ -14,6 +14,7 @@ public:
 
 private slots:
 	void dialogCommis();
+	void dialogSupprimerEmploye();
 
 private:
 	labo10::Entreprise m_entreprise;

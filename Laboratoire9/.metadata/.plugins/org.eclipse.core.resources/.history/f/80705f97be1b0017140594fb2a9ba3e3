@@ -1,0 +1,62 @@
+/**
+ * \file Entreprise.cpp
+ * \brief 
+ * \author Pierre-Marc Levasseur
+ * \date 2017-03-29
+ */
+
+#include "Entreprise.h"
+#include "EmployeException.h"
+#include <sstream>
+
+using namespace std;
+
+namespace labo10 {
+
+Entreprise::Entreprise() :
+		m_employes(vector<Employe*>()) {
+}
+
+Entreprise::~Entreprise() {
+	for (size_t i = 0; i < m_employes.size(); i++) {
+		delete m_employes[i];
+	}
+	m_employes.clear();
+}
+
+void Entreprise::ajouterEmploye(Employe* employe) {
+	m_employes.push_back(employe);
+}
+
+bool Entreprise::employeEstDejaPresent(const Employe& employe) const {
+	for (vector<Employe*>::const_iterator it = m_employes.begin(); it != m_employes.end(); ++it) {
+		if (*(*it) == employe) {
+			return true;
+		}
+	}
+}
+
+string Entreprise::reqEntrepriseFormate() const {
+	ostringstream os;
+
+	for (size_t i = 0; i < m_employes.size(); i++) {
+		os << m_employes[i]->reqEmployeFormate() << endl;
+		os << "------------------" << endl;
+	}
+
+	return os.str();
+}
+
+void Entreprise::supprimerEmploye(const std::string& nom, const std::string& prenom) {
+	for (vector<Employe*>::iterator it = m_employes.begin(); it != m_employes.end(); ++it) {
+		if ((*it)->reqNomFamille() == nom && (*it)->reqPrenom() == prenom) {
+			m_employes.erase(it);
+			delete *it;
+			return;
+		}
+	}
+	throw EmployeAbsentException("employe pas present dans l'entreprise");
+}
+
+} /* namespace labo10 */
+

@@ -41,8 +41,18 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QPushButton" name="ajouterCommisBouton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="text">
         <string>Ajouter Commis</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="supprimerEmployeBouton">
+       <property name="text">
+        <string>Supprimer Employé</string>
        </property>
       </widget>
      </item>

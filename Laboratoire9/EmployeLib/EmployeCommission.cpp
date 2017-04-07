@@ -106,7 +106,7 @@ double EmployeCommission::gains() const {
  */
 std::string EmployeCommission::reqEmployeFormate() const {
 	ostringstream os;
-	os << std::endl << " Employé à commission: ";
+	os << std::endl << " Employe a commission: ";
 	os << Employe::reqEmployeFormate();
 	return os.str();
 }

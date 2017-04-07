@@ -2,14 +2,19 @@
 #include "EmployeCommission.h"
 #include "Date.h"
 #include "employecommissiondialog.h"
+#include "dialogsupprimeremploye.h"
+#include "EmployeException.h"
+#include <QMessageBox>
 
 using namespace labo10;
 using namespace util;
+using namespace std;
 
 EmployeGUI::EmployeGUI(QWidget *parent) :
 		QMainWindow(parent) {
 	ui.setupUi(this);
 	QObject::connect(ui.ajouterCommisBouton, SIGNAL(clicked()), this, SLOT(dialogCommis()));
+	QObject::connect(ui.supprimerEmployeBouton, SIGNAL(clicked()), this, SLOT(dialogSupprimerEmploye()));
 }
 
 EmployeGUI::~EmployeGUI() {
@@ -17,12 +22,33 @@ EmployeGUI::~EmployeGUI() {
 }
 
 void EmployeGUI::dialogCommis() {
-	EmployeCommissionDialog saisieCommis(this);
+	EmployeCommissionDialog saisieCommis(this, COMMISSION);
 	if (saisieCommis.exec()) {
 		EmployeCommission *temp = new EmployeCommission(saisieCommis.reqNom().toStdString(),
 				saisieCommis.reqPrenom().toStdString(), saisieCommis.reqDateNaissance(), saisieCommis.reqSalaire(),
 				saisieCommis.reqCommission(), saisieCommis.reqQuantite());
-		m_entreprise.ajouterEmploye(temp);
+		if (m_entreprise.employeEstDejaPresent(*temp)) {
+			QString message("Employé déjà présent dans l'entreprise.");
+			QMessageBox::information(this, "Erreur!!", message);
+		} else {
+			m_entreprise.ajouterEmploye(temp);
+		}
+
+	}
+	ui.affichageEntrepriseTextEdit->setText(m_entreprise.reqEntrepriseFormate().c_str());
+}
+
+void EmployeGUI::dialogSupprimerEmploye() {
+	DialogSupprimerEmploye dialogSuppEmploye(this);
+	if (dialogSuppEmploye.exec()) {
+		string nom = dialogSuppEmploye.reqNom().toStdString();
+		string prenom = dialogSuppEmploye.reqPrenom().toStdString();
+		try {
+			m_entreprise.supprimerEmploye(nom, prenom);
+		} catch (const EmployeAbsentException& e) {
+			QString message = QString(e.what());
+			QMessageBox::critical(this, "Erreur!!", message);
+		}
 	}
 	ui.affichageEntrepriseTextEdit->setText(m_entreprise.reqEntrepriseFormate().c_str());
 }

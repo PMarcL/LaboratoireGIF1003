@@ -37,6 +37,7 @@ public:
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *verticalLayout_2;
     QPushButton *ajouterCommisBouton;
+    QPushButton *supprimerEmployeBouton;
     QSpacerItem *verticalSpacer;
     QMenuBar *menubar;
     QMenu *menuFichier;
@@ -70,8 +71,14 @@ public:
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         ajouterCommisBouton = new QPushButton(verticalLayoutWidget_2);
         ajouterCommisBouton->setObjectName(QString::fromUtf8("ajouterCommisBouton"));
+        ajouterCommisBouton->setEnabled(true);
 
         verticalLayout_2->addWidget(ajouterCommisBouton);
+
+        supprimerEmployeBouton = new QPushButton(verticalLayoutWidget_2);
+        supprimerEmployeBouton->setObjectName(QString::fromUtf8("supprimerEmployeBouton"));
+
+        verticalLayout_2->addWidget(supprimerEmployeBouton);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -102,6 +109,7 @@ public:
         EmployeGUIClass->setWindowTitle(QApplication::translate("EmployeGUIClass", "MainWindow", 0, QApplication::UnicodeUTF8));
         actionQuitter->setText(QApplication::translate("EmployeGUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
         ajouterCommisBouton->setText(QApplication::translate("EmployeGUIClass", "Ajouter Commis", 0, QApplication::UnicodeUTF8));
+        supprimerEmployeBouton->setText(QApplication::translate("EmployeGUIClass", "Supprimer Employ\303\251", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("EmployeGUIClass", "Fichier", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

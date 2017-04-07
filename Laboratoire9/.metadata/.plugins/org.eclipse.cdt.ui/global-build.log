@@ -654,3 +654,586 @@ g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/
 g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
 { test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:28:39 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+12:45:57 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:46:03 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EmployeGUI.pro 
+12:53:18 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic dialogsupprimeremploye.ui -o ui_dialogsupprimeremploye.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:53:22 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+12:54:19 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic dialogsupprimeremploye.ui -o ui_dialogsupprimeremploye.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:54:20 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+12:56:25 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+12:56:27 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:00:38 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:00:39 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:02:40 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+In file included from employegui.cpp:5:0:
+dialogsupprimeremploye.h: In member function ‘void EmployeGUI::dialogSupprimerEmploye()’:
+dialogsupprimeremploye.h:10:10: error: ‘QString DialogSupprimerEmploye::reqNom() const’ is private
+  QString reqNom() const;
+          ^
+employegui.cpp:36:41: error: within this context
+   string nom = dialogSuppEmploye.reqNom().toStdString();
+                                         ^
+In file included from employegui.cpp:5:0:
+dialogsupprimeremploye.h:11:10: error: ‘QString DialogSupprimerEmploye::reqPrenom() const’ is private
+  QString reqPrenom() const;
+          ^
+employegui.cpp:37:47: error: within this context
+   string prenom = dialogSuppEmploye.reqPrenom().toStdString();
+                                               ^
+Makefile.Debug:204 : la recette pour la cible « debug/employegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [debug/employegui.o] Erreur 1
+make: *** [debug] Erreur 2
+13:02:41 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:03:25 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:03:28 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:21:15 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeException.d" -MT"EmployeException.o" -o "EmployeException.o" "../EmployeException.cpp"
+In file included from ../EmployeException.cpp:8:0:
+../EmployeException.h:18:10: error: looser throw specifier for ‘virtual labo10::EmployeException::~EmployeException()’
+  virtual ~EmployeException();
+          ^
+In file included from ../EmployeException.h:11:0,
+                 from ../EmployeException.cpp:8:
+/usr/include/c++/5/stdexcept:211:13: error:   overriding ‘virtual std::runtime_error::~runtime_error() throw ()’
+     virtual ~runtime_error() _GLIBCXX_USE_NOEXCEPT;
+             ^
+subdir.mk:39 : la recette pour la cible « EmployeException.o » a échouée
+make: *** [EmployeException.o] Erreur 1
+13:23:06 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../EmployeException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeException.d" -MT"EmployeException.o" -o "EmployeException.o" "../EmployeException.cpp"
+Finished building: ../EmployeException.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:25:56 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:29:55 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:29:56 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:30:46 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:30:47 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:41:25 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:41:27 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+13:44:19 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:44:20 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:47:32 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:47:34 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:51:06 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:58:33 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic employecommissiondialog.ui -o ui_employecommissiondialog.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+dialogsupprimeremploye.cpp: In constructor ‘DialogSupprimerEmploye::DialogSupprimerEmploye(QWidget*)’:
+dialogsupprimeremploye.cpp:7:2: error: expected ‘;’ before ‘QObject’
+  QObject::connect(ui.okBouton, SIGNAL(clicked()), this, SLOT(validerFormulaire()));
+  ^
+dialogsupprimeremploye.cpp:6:5: warning: statement has no effect [-Wunused-value]
+  ui.okBouton
+     ^
+make[1]: *** [debug/dialogsupprimeremploye.o] Erreur 1
+make: *** [debug] Erreur 2
+Makefile.Debug:190 : la recette pour la cible « debug/dialogsupprimeremploye.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+13:58:34 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+13:58:48 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+13:58:54 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:00:02 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+In file included from employecommissiondialog.cpp:1:0:
+employecommissiondialog.h:16:2: error: default argument missing for parameter 2 of ‘EmployeCommissionDialog::EmployeCommissionDialog(QWidget*, TypeDialog)’
+  EmployeCommissionDialog(QWidget *parent = 0, TypeDialog t);
+  ^
+In file included from /usr/include/qt4/QtGui/qdialog.h:45:0,
+                 from /usr/include/qt4/QtGui/QDialog:1,
+                 from employecommissiondialog.h:4,
+                 from employecommissiondialog.cpp:1:
+/usr/include/qt4/QtGui/qwidget.h: In constructor ‘EmployeCommissionDialog::EmployeCommissionDialog(QWidget*, TypeDialog)’:
+/usr/include/qt4/QtGui/qwidget.h:914:18: error: ‘virtual void QWidget::enabledChange(bool)’ is protected
+     virtual void enabledChange(bool);  // compat
+                  ^
+employecommissiondialog.cpp:11:45: error: within this context
+   ui.salaireHebdoPatron->enabledChange(false);
+                                             ^
+Makefile.Debug:194 : la recette pour la cible « debug/employecommissiondialog.o » a échouée
+make[1]: *** [debug/employecommissiondialog.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+14:00:03 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:01:11 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+In file included from employecommissiondialog.cpp:1:0:
+employecommissiondialog.h:16:2: error: default argument missing for parameter 2 of ‘EmployeCommissionDialog::EmployeCommissionDialog(QWidget*, TypeDialog)’
+  EmployeCommissionDialog(QWidget *parent = 0, TypeDialog t);
+  ^
+Makefile.Debug:194 : la recette pour la cible « debug/employecommissiondialog.o » a échouée
+make[1]: *** [debug/employecommissiondialog.o] Erreur 1
+make: *** [debug] Erreur 2
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+14:01:12 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:01:34 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+14:01:37 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:12:21 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+Finished building: ../Entreprise.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:18:27 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+../Entreprise.cpp: In member function ‘bool labo10::Entreprise::employeEstDejaPresent(const labo10::Employe&) const’:
+../Entreprise.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../Entreprise.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:35:34 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+../Entreprise.cpp: In member function ‘bool labo10::Entreprise::employeEstDejaPresent(const labo10::Employe&) const’:
+../Entreprise.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../Entreprise.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:36:27 **** Clean-only build of configuration Debug for project EmployeLib ****
+make clean 
+rm -rf  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o  ./ContratException.d ./Date.d ./Employe.d ./EmployeCommission.d ./EmployeException.d ./EmployeHoraire.d ./Entreprise.d ./Patron.d  libEmployeLib.a
+ 
+14:36:27 **** Clean-only build of project EmployeGUI ****
+make clean 
+make -f Makefile.Release clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+rm -f release/moc_dialogsupprimeremploye.cpp release/moc_employecommissiondialog.cpp release/moc_employegui.cpp
+rm -f ui_dialogsupprimeremploye.h ui_employecommissiondialog.h ui_employegui.h
+rm -f release/dialogsupprimeremploye.o release/employecommissiondialog.o release/main.o release/employegui.o release/moc_dialogsupprimeremploye.o release/moc_employecommissiondialog.o release/moc_employegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+make -f Makefile.Debug clean
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+rm -f debug/moc_dialogsupprimeremploye.cpp debug/moc_employecommissiondialog.cpp debug/moc_employegui.cpp
+rm -f ui_dialogsupprimeremploye.h ui_employecommissiondialog.h ui_employegui.h
+rm -f debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o
+rm -f *~ core *.core
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+14:36:32 **** Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic dialogsupprimeremploye.ui -o ui_dialogsupprimeremploye.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic employecommissiondialog.ui -o ui_employecommissiondialog.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic employegui.ui -o ui_employegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/dialogsupprimeremploye.o dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employecommissiondialog.o employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/employegui.o employegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. dialogsupprimeremploye.h -o debug/moc_dialogsupprimeremploye.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_dialogsupprimeremploye.o debug/moc_dialogsupprimeremploye.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employecommissiondialog.h -o debug/moc_employecommissiondialog.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employecommissiondialog.o debug/moc_employecommissiondialog.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. employegui.h -o debug/moc_employegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../EmployeLib -Idebug -I. -o debug/moc_employegui.o debug/moc_employegui.cpp
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+g++: error: ../EmployeLib/Debug/libEmployeLib.a: Aucun fichier ou dossier de ce type
+make[1]: *** [EmployeGUI] Erreur 1
+Makefile.Debug:115 : la recette pour la cible « EmployeGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+14:36:37 **** Build of configuration Debug for project EmployeLib ****
+make all 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../Employe.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Employe.d" -MT"Employe.o" -o "Employe.o" "../Employe.cpp"
+Finished building: ../Employe.cpp
+ 
+Building file: ../EmployeCommission.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeCommission.d" -MT"EmployeCommission.o" -o "EmployeCommission.o" "../EmployeCommission.cpp"
+Finished building: ../EmployeCommission.cpp
+ 
+Building file: ../EmployeException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeException.d" -MT"EmployeException.o" -o "EmployeException.o" "../EmployeException.cpp"
+Finished building: ../EmployeException.cpp
+ 
+Building file: ../EmployeHoraire.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EmployeHoraire.d" -MT"EmployeHoraire.o" -o "EmployeHoraire.o" "../EmployeHoraire.cpp"
+Finished building: ../EmployeHoraire.cpp
+ 
+Building file: ../Entreprise.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Entreprise.d" -MT"Entreprise.o" -o "Entreprise.o" "../Entreprise.cpp"
+../Entreprise.cpp: In member function ‘bool labo10::Entreprise::employeEstDejaPresent(const labo10::Employe&) const’:
+../Entreprise.cpp:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../Entreprise.cpp
+ 
+Building file: ../Patron.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Patron.d" -MT"Patron.o" -o "Patron.o" "../Patron.cpp"
+Finished building: ../Patron.cpp
+ 
+Building target: libEmployeLib.a
+Invoking: GCC Archiver
+ar -r  "libEmployeLib.a"  ./ContratException.o ./Date.o ./Employe.o ./EmployeCommission.o ./EmployeException.o ./EmployeHoraire.o ./Entreprise.o ./Patron.o   
+ar: création de libEmployeLib.a
+Finished building target: libEmployeLib.a
+ 
+14:37:06 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+14:37:16 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».
+/usr/bin/qmake -recursive CONFIG+=debug_and_release EmployeGUI.pro 
+14:37:23 **** Incremental Build of project EmployeGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+g++  -o EmployeGUI debug/dialogsupprimeremploye.o debug/employecommissiondialog.o debug/main.o debug/employegui.o debug/moc_dialogsupprimeremploye.o debug/moc_employecommissiondialog.o debug/moc_employegui.o    -L/usr/lib/i386-linux-gnu ../EmployeLib/Debug/libEmployeLib.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'EmployeGUI' && test -f EmployeGUI.gdb-index && objcopy --add-section '.gdb_index=EmployeGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'EmployeGUI' 'EmployeGUI' && rm -f EmployeGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/LaboratoireGIF1003/Laboratoire9/EmployeGUI »
+14:37:24 **** Incremental Build of configuration Debug for project EmployeLib ****
+make all 
+make: rien à faire pour « all ».

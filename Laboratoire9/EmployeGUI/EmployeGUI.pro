@@ -2,12 +2,15 @@ TEMPLATE = app
 TARGET = EmployeGUI
 QT += core \
     gui
-HEADERS += employecommissiondialog.h \
+HEADERS += dialogsupprimeremploye.h \
+    employecommissiondialog.h \
     employegui.h
-SOURCES += employecommissiondialog.cpp \
+SOURCES += dialogsupprimeremploye.cpp \
+    employecommissiondialog.cpp \
     main.cpp \
     employegui.cpp
-FORMS += employecommissiondialog.ui \
+FORMS += dialogsupprimeremploye.ui \
+    employecommissiondialog.ui \
     employegui.ui
 RESOURCES += 
 LIBS += "../EmployeLib/Debug/libEmployeLib.a"

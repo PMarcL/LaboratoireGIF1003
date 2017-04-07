@@ -87,7 +87,7 @@ double EmployeHoraire::gains() const {
  */
 std::string EmployeHoraire::reqEmployeFormate() const {
 	std::ostringstream os;
-	os << std::endl << " Employé horaire : ";
+	os << std::endl << " Employe horaire : ";
 	os << Employe::reqEmployeFormate(); // appel de la méthode reqEmployeFormate de la classe parent Employe
 	return os.str();
 }
